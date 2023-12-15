@@ -1,6 +1,6 @@
 .PHONY: results.json
 results.json: node_modules pmd
-	PMD_HOME=$(shell pwd)/pmd npm run build
+	npm run build
 
 node_modules:
 	npm install
