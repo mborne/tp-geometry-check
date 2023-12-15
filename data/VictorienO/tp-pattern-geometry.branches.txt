@@ -1,0 +1,10 @@
+* initial
+  remotes/origin/01_coordinate2D
+  remotes/origin/02_GeometryPointLInestring
+  remotes/origin/03_GeometryIsEmpty
+  remotes/origin/04_GeometryTranslate
+  remotes/origin/05_GeometryClone
+  remotes/origin/06_EnveloppeEnveloppeBuilder
+  remotes/origin/HEAD -> origin/initial
+  remotes/origin/initial
+  remotes/origin/victorien/dev-
