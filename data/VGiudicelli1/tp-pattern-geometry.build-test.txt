@@ -33,19 +33,19 @@
  T E S T S
 -------------------------------------------------------
 Running org.acme.geometry.WktVisitorTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
 Running org.acme.geometry.GeometryCachedEnvelopeTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.acme.geometry.CoordinateTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
-Running org.acme.geometry.GeometryTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
-Running org.acme.geometry.EnvelopeTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
-Running org.acme.geometry.LogGeometryVisitorTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.acme.geometry.GeometryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.acme.geometry.EnvelopeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.acme.geometry.LogGeometryVisitorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.acme.geometry.WktWriterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 
 Results :
 
@@ -61,6 +61,6 @@ Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.439 s
-[INFO] Finished at: 2023-12-15T16:42:38+01:00
+[INFO] Total time:  1.861 s
+[INFO] Finished at: 2023-12-15T16:55:09+01:00
 [INFO] ------------------------------------------------------------------------

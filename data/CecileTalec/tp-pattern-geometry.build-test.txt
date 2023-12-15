@@ -39,7 +39,7 @@ Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.acme.geometry.EnvelopeBuilderTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.acme.geometry.EnvelopeTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.acme.geometry.PointTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.acme.geometry.WktWriterTest
@@ -59,6 +59,6 @@ Tests run: 27, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.816 s
-[INFO] Finished at: 2023-12-15T16:43:37+01:00
+[INFO] Total time:  1.884 s
+[INFO] Finished at: 2023-12-15T16:56:05+01:00
 [INFO] ------------------------------------------------------------------------

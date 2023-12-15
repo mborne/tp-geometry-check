@@ -16,7 +16,7 @@
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ tp-pattern-geometry ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1 source file to /home/formation/workspace_patterns/tp-geometry-check/data/VictorienO/tp-pattern-geometry/target/classes
+[INFO] Compiling 9 source files to /home/formation/workspace_patterns/tp-geometry-check/data/VictorienO/tp-pattern-geometry/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tp-pattern-geometry ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -24,7 +24,9 @@
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ tp-pattern-geometry ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1 source file to /home/formation/workspace_patterns/tp-geometry-check/data/VictorienO/tp-pattern-geometry/target/test-classes
+[INFO] Compiling 6 source files to /home/formation/workspace_patterns/tp-geometry-check/data/VictorienO/tp-pattern-geometry/target/test-classes
+[WARNING] /home/formation/workspace_patterns/tp-geometry-check/data/VictorienO/tp-pattern-geometry/src/test/java/org/acme/geometry/GeometryVisitorTest.java: /home/formation/workspace_patterns/tp-geometry-check/data/VictorienO/tp-pattern-geometry/src/test/java/org/acme/geometry/GeometryVisitorTest.java uses or overrides a deprecated API.
+[WARNING] /home/formation/workspace_patterns/tp-geometry-check/data/VictorienO/tp-pattern-geometry/src/test/java/org/acme/geometry/GeometryVisitorTest.java: Recompile with -Xlint:deprecation for details.
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tp-pattern-geometry ---
 [INFO] Surefire report directory: /home/formation/workspace_patterns/tp-geometry-check/data/VictorienO/tp-pattern-geometry/target/surefire-reports
@@ -32,12 +34,22 @@
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
+Running org.acme.geometry.LineStringTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec
 Running org.acme.geometry.CoordinateTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.acme.geometry.GeometryVisitorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.acme.geometry.PointTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.acme.geometry.EnveloppeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.acme.geometry.WktWriterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 
 Results :
 
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ tp-pattern-geometry ---
@@ -45,10 +57,10 @@ Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.6:report (default-cli) @ tp-pattern-geometry ---
 [INFO] Loading execution data file /home/formation/workspace_patterns/tp-geometry-check/data/VictorienO/tp-pattern-geometry/target/jacoco.exec
-[INFO] Analyzed bundle 'tp-pattern-geometry' with 1 classes
+[INFO] Analyzed bundle 'tp-pattern-geometry' with 7 classes
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.708 s
-[INFO] Finished at: 2023-12-15T16:43:01+01:00
+[INFO] Total time:  1.858 s
+[INFO] Finished at: 2023-12-15T16:55:31+01:00
 [INFO] ------------------------------------------------------------------------

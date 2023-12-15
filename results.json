@@ -23,7 +23,7 @@
     "username": "Cirederf1",
     "repositoryUrl": "https://github.com/Cirederf1/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "c95855f212c70acc41ee2e8a2d93e9989eddeca4",
+    "commitId": "bd39762194fbb1225759c3294afe7688b5223f15",
     "build": true,
     "test": true,
     "coverage": 99.2,
@@ -63,10 +63,10 @@
     "username": "VictorienO",
     "repositoryUrl": "https://github.com/VictorienO/tp-pattern-geometry-victorien",
     "branchName": "initial",
-    "commitId": "e72b10db0c1a76c5538052ee5d33bc00c72be466",
+    "commitId": "4a4bcdf06a3bb7fa3f97ac3a11f13ff2f2e4d652",
     "build": true,
     "test": true,
-    "coverage": 100,
+    "coverage": 98.6,
     "pmd": true
   },
   {
@@ -133,10 +133,10 @@
     "username": "Sivloc",
     "repositoryUrl": "https://github.com/Sivloc/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "6ca2a9612d017b65f5262b4a49f17130d3f51286",
+    "commitId": "3bd10760b97bd5d142e8a1c516c56041e212a06c",
     "build": true,
-    "test": true,
-    "coverage": 100,
+    "test": false,
+    "coverage": 0,
     "pmd": true
   }
 ]
