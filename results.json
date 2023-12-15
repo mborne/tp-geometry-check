@@ -2,12 +2,12 @@
   {
     "username": "MatRouillard",
     "repositoryUrl": "https://github.com/MatRouillard/tp-pattern-geometry",
-    "branchName": "initial",
-    "commitId": "9dcc3aae85ff2f61035a2f4767a32ba507096856",
+    "branchName": "dev",
+    "commitId": "02a85dcc79f75dd45e2b6ddf1ae9ebe82999e865",
     "build": true,
     "test": true,
-    "coverage": 0,
-    "pmd": false
+    "coverage": 91.9,
+    "pmd": true
   },
   {
     "username": "ClaireGuerrini",
@@ -17,47 +17,47 @@
     "build": true,
     "test": true,
     "coverage": 100,
-    "pmd": false
+    "pmd": true
   },
   {
     "username": "Cirederf1",
     "repositoryUrl": "https://github.com/Cirederf1/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "94c693a3007aca1fa25f7fb382dc2ad7ca695ccf",
+    "commitId": "f3a8722981fa498cacb598e93c348fab70728e62",
     "build": true,
     "test": true,
     "coverage": 100,
-    "pmd": false
+    "pmd": true
   },
   {
     "username": "VGiudicelli1",
     "repositoryUrl": "https://github.com/VGiudicelli1/tp-pattern-geometry.git",
     "branchName": "dev",
-    "commitId": "ec4808a78be1c48ac36a80a14119a396c174f79e",
+    "commitId": "a9dc65c051c2d1a2a6784354693bbe91c6851c09",
     "build": true,
     "test": true,
-    "coverage": 99,
-    "pmd": false
+    "coverage": 98.3,
+    "pmd": true
   },
   {
     "username": "rom2049",
     "repositoryUrl": "https://github.com/rom2049/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "62d94764c504d6e5d18db52278ba95282761d36c",
+    "commitId": "78428f01df50ed698d3c6b91594d23d1992451c7",
     "build": true,
     "test": true,
-    "coverage": 100,
-    "pmd": false
+    "coverage": 98.5,
+    "pmd": true
   },
   {
     "username": "AxelDmt",
     "repositoryUrl": "https://github.com/AxelDmt/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "5637e929bd510cdb4908044f2297784760319f2b",
+    "commitId": "eb0403313f41c3a5535a609cd94a840fb46f524f",
     "build": true,
     "test": true,
-    "coverage": 87,
-    "pmd": false
+    "coverage": 77.2,
+    "pmd": true
   },
   {
     "username": "VictorienO",
@@ -67,27 +67,27 @@
     "build": true,
     "test": true,
     "coverage": 100,
-    "pmd": false
+    "pmd": true
   },
   {
     "username": "outmrhoust",
     "repositoryUrl": "https://github.com/outmrhoust/tp-pattern-geometry.git",
     "branchName": "initial",
-    "commitId": "fa053be3273bd80d280bca940bcf8c20c6f3970c",
+    "commitId": "b5b40e34e09fc1abb221f833a160a08ef88e105d",
     "build": true,
     "test": true,
-    "coverage": 95.8,
-    "pmd": false
+    "coverage": 96,
+    "pmd": true
   },
   {
     "username": "ToffoluttiVittorio",
-    "repositoryUrl": "https://github.com/ToffoluttiVittorio",
+    "repositoryUrl": "https://github.com/ToffoluttiVittorio/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "fa053be3273bd80d280bca940bcf8c20c6f3970c",
+    "commitId": "9dcc3aae85ff2f61035a2f4767a32ba507096856",
     "build": true,
     "test": true,
     "coverage": 0,
-    "pmd": false
+    "pmd": true
   },
   {
     "username": "Matheoia",
@@ -97,7 +97,7 @@
     "build": true,
     "test": true,
     "coverage": 0,
-    "pmd": false
+    "pmd": true
   },
   {
     "username": "Hannick5",
@@ -107,7 +107,7 @@
     "build": true,
     "test": true,
     "coverage": 100,
-    "pmd": false
+    "pmd": true
   },
   {
     "username": "CecileTalec",
@@ -117,17 +117,17 @@
     "build": true,
     "test": true,
     "coverage": 100,
-    "pmd": false
+    "pmd": true
   },
   {
     "username": "GirardinClaire",
     "repositoryUrl": "https://github.com/GirardinClaire/tp-pattern-geometry",
-    "branchName": "initial",
-    "commitId": "9dcc3aae85ff2f61035a2f4767a32ba507096856",
+    "branchName": "dev",
+    "commitId": "7060b8d3c1fa7525d77ae1052a26a514dc069ede",
     "build": true,
     "test": true,
-    "coverage": 0,
-    "pmd": false
+    "coverage": 97.6,
+    "pmd": true
   },
   {
     "username": "Sivloc",
@@ -137,6 +137,6 @@
     "build": true,
     "test": true,
     "coverage": 0,
-    "pmd": false
+    "pmd": true
   }
 ]

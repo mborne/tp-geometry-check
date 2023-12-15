@@ -5,6 +5,8 @@
   remotes/origin/04_GeometryTranslate
   remotes/origin/05_GeometryClone
   remotes/origin/06_EnveloppeEnveloppeBuilder
+  remotes/origin/07_GetEnveloppe
+  remotes/origin/08_WKTWriter
   remotes/origin/HEAD -> origin/initial
   remotes/origin/initial
   remotes/origin/victorien/dev-
