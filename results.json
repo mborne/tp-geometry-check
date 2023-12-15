@@ -33,20 +33,20 @@
     "username": "VGiudicelli1",
     "repositoryUrl": "https://github.com/VGiudicelli1/tp-pattern-geometry.git",
     "branchName": "dev",
-    "commitId": "a9dc65c051c2d1a2a6784354693bbe91c6851c09",
+    "commitId": "b1a447a39ddbbc112514e1d5be06761fee998d58",
     "build": true,
     "test": true,
-    "coverage": 98.3,
+    "coverage": 98.6,
     "pmd": true
   },
   {
     "username": "rom2049",
     "repositoryUrl": "https://github.com/rom2049/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "78428f01df50ed698d3c6b91594d23d1992451c7",
+    "commitId": "a931055c9c45125863392fac9d6b60cbaac00567",
     "build": true,
     "test": true,
-    "coverage": 98.5,
+    "coverage": 97.8,
     "pmd": true
   },
   {
@@ -113,30 +113,30 @@
     "username": "CecileTalec",
     "repositoryUrl": "https://github.com/CecileTalec/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "63bbf601640d492d3358f54e911b6008b5a018dd",
+    "commitId": "2c563219ada14a9e37bbc36a81e853bcd17625d1",
     "build": true,
     "test": true,
-    "coverage": 100,
+    "coverage": 98,
     "pmd": true
   },
   {
     "username": "GirardinClaire",
     "repositoryUrl": "https://github.com/GirardinClaire/tp-pattern-geometry",
     "branchName": "dev",
-    "commitId": "7060b8d3c1fa7525d77ae1052a26a514dc069ede",
+    "commitId": "0057920ba42b01c64df5328d9214e40c06d78014",
     "build": true,
     "test": true,
-    "coverage": 97.6,
+    "coverage": 97.2,
     "pmd": true
   },
   {
     "username": "Sivloc",
     "repositoryUrl": "https://github.com/Sivloc/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "9dcc3aae85ff2f61035a2f4767a32ba507096856",
+    "commitId": "6ca2a9612d017b65f5262b4a49f17130d3f51286",
     "build": true,
     "test": true,
-    "coverage": 0,
+    "coverage": 100,
     "pmd": true
   }
 ]
