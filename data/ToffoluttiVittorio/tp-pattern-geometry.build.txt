@@ -5,6 +5,7 @@
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tp-pattern-geometry ---
+[INFO] Deleting /home/formation/workspace_patterns/tp-geometry-check/data/ToffoluttiVittorio/tp-pattern-geometry/target
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.6:prepare-agent (default) @ tp-pattern-geometry ---
 [INFO] argLine set to -javaagent:/home/formation/.m2/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/home/formation/workspace_patterns/tp-geometry-check/data/ToffoluttiVittorio/tp-pattern-geometry/target/jacoco.exec
@@ -15,7 +16,9 @@
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ tp-pattern-geometry ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1 source file to /home/formation/workspace_patterns/tp-geometry-check/data/ToffoluttiVittorio/tp-pattern-geometry/target/classes
+[INFO] Compiling 6 source files to /home/formation/workspace_patterns/tp-geometry-check/data/ToffoluttiVittorio/tp-pattern-geometry/target/classes
+[WARNING] /home/formation/workspace_patterns/tp-geometry-check/data/ToffoluttiVittorio/tp-pattern-geometry/src/main/java/org/acme/geometry/LineString.java: /home/formation/workspace_patterns/tp-geometry-check/data/ToffoluttiVittorio/tp-pattern-geometry/src/main/java/org/acme/geometry/LineString.java uses unchecked or unsafe operations.
+[WARNING] /home/formation/workspace_patterns/tp-geometry-check/data/ToffoluttiVittorio/tp-pattern-geometry/src/main/java/org/acme/geometry/LineString.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tp-pattern-geometry ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -23,7 +26,7 @@
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ tp-pattern-geometry ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 1 source file to /home/formation/workspace_patterns/tp-geometry-check/data/ToffoluttiVittorio/tp-pattern-geometry/target/test-classes
+[INFO] Compiling 2 source files to /home/formation/workspace_patterns/tp-geometry-check/data/ToffoluttiVittorio/tp-pattern-geometry/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tp-pattern-geometry ---
 [INFO] Tests are skipped.
@@ -33,6 +36,6 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.261 s
-[INFO] Finished at: 2023-12-15T15:30:46+01:00
+[INFO] Total time:  1.366 s
+[INFO] Finished at: 2023-12-15T16:20:11+01:00
 [INFO] ------------------------------------------------------------------------

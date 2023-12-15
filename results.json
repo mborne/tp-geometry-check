@@ -3,11 +3,11 @@
     "username": "MatRouillard",
     "repositoryUrl": "https://github.com/MatRouillard/tp-pattern-geometry",
     "branchName": "dev",
-    "commitId": "02a85dcc79f75dd45e2b6ddf1ae9ebe82999e865",
+    "commitId": "ba12caab0ecc443e2f2465b5fd4cfac981db7531",
     "build": true,
     "test": true,
-    "coverage": 91.9,
-    "pmd": true
+    "coverage": 93.1,
+    "pmd": false
   },
   {
     "username": "ClaireGuerrini",
@@ -17,47 +17,47 @@
     "build": true,
     "test": true,
     "coverage": 100,
-    "pmd": true
+    "pmd": false
   },
   {
     "username": "Cirederf1",
     "repositoryUrl": "https://github.com/Cirederf1/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "f3a8722981fa498cacb598e93c348fab70728e62",
+    "commitId": "c95855f212c70acc41ee2e8a2d93e9989eddeca4",
     "build": true,
     "test": true,
-    "coverage": 100,
-    "pmd": true
+    "coverage": 99.2,
+    "pmd": false
   },
   {
     "username": "VGiudicelli1",
     "repositoryUrl": "https://github.com/VGiudicelli1/tp-pattern-geometry.git",
     "branchName": "dev",
-    "commitId": "b1a447a39ddbbc112514e1d5be06761fee998d58",
+    "commitId": "aac6f7034dfdd4f7ac2c812d386e4ca7462c820f",
     "build": true,
     "test": true,
     "coverage": 98.6,
-    "pmd": true
+    "pmd": false
   },
   {
     "username": "rom2049",
     "repositoryUrl": "https://github.com/rom2049/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "a931055c9c45125863392fac9d6b60cbaac00567",
+    "commitId": "e1392964a54e7f4a0435851c02d3ad7e56c0d9b2",
     "build": true,
     "test": true,
-    "coverage": 97.8,
-    "pmd": true
+    "coverage": 97.3,
+    "pmd": false
   },
   {
     "username": "AxelDmt",
     "repositoryUrl": "https://github.com/AxelDmt/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "eb0403313f41c3a5535a609cd94a840fb46f524f",
+    "commitId": "03c8f65a818736c0ecd2e18cb2f4e10fb2111522",
     "build": true,
     "test": true,
-    "coverage": 77.2,
-    "pmd": true
+    "coverage": 71.2,
+    "pmd": false
   },
   {
     "username": "VictorienO",
@@ -67,7 +67,7 @@
     "build": true,
     "test": true,
     "coverage": 100,
-    "pmd": true
+    "pmd": false
   },
   {
     "username": "outmrhoust",
@@ -77,17 +77,17 @@
     "build": true,
     "test": true,
     "coverage": 96,
-    "pmd": true
+    "pmd": false
   },
   {
     "username": "ToffoluttiVittorio",
     "repositoryUrl": "https://github.com/ToffoluttiVittorio/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "9dcc3aae85ff2f61035a2f4767a32ba507096856",
+    "commitId": "ba67d44abdc2076998d202505ece205433a36b5c",
     "build": true,
     "test": true,
-    "coverage": 0,
-    "pmd": true
+    "coverage": 66,
+    "pmd": false
   },
   {
     "username": "Matheoia",
@@ -97,7 +97,7 @@
     "build": true,
     "test": true,
     "coverage": 0,
-    "pmd": true
+    "pmd": false
   },
   {
     "username": "Hannick5",
@@ -107,7 +107,7 @@
     "build": true,
     "test": true,
     "coverage": 100,
-    "pmd": true
+    "pmd": false
   },
   {
     "username": "CecileTalec",
@@ -117,17 +117,17 @@
     "build": true,
     "test": true,
     "coverage": 98,
-    "pmd": true
+    "pmd": false
   },
   {
     "username": "GirardinClaire",
     "repositoryUrl": "https://github.com/GirardinClaire/tp-pattern-geometry",
     "branchName": "dev",
-    "commitId": "0057920ba42b01c64df5328d9214e40c06d78014",
+    "commitId": "c78698f41ba23801f8c861fba3396454aa920040",
     "build": true,
     "test": true,
-    "coverage": 97.2,
-    "pmd": true
+    "coverage": 97.6,
+    "pmd": false
   },
   {
     "username": "Sivloc",
@@ -137,6 +137,6 @@
     "build": true,
     "test": true,
     "coverage": 100,
-    "pmd": true
+    "pmd": false
   }
 ]

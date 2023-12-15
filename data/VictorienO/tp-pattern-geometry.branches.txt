@@ -7,6 +7,7 @@
   remotes/origin/06_EnveloppeEnveloppeBuilder
   remotes/origin/07_GetEnveloppe
   remotes/origin/08_WKTWriter
+  remotes/origin/09_GeometryVisitor
   remotes/origin/HEAD -> origin/initial
   remotes/origin/initial
   remotes/origin/victorien/dev-

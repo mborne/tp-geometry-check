@@ -33,7 +33,7 @@
  T E S T S
 -------------------------------------------------------
 Running org.acme.geometry.LineStringTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
 Running org.acme.geometry.CoordinateTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.acme.geometry.PointTest
@@ -53,6 +53,6 @@ Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.754 s
-[INFO] Finished at: 2023-12-15T15:29:49+01:00
+[INFO] Total time:  1.830 s
+[INFO] Finished at: 2023-12-15T16:19:33+01:00
 [INFO] ------------------------------------------------------------------------

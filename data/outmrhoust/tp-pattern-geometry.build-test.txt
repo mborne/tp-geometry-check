@@ -33,7 +33,7 @@
  T E S T S
 -------------------------------------------------------
 Running org.acme.geometry.LineStringTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec
 Running org.acme.geometry.CoordinateTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.acme.geometry.EnvelopeBuilderTest
@@ -59,6 +59,6 @@ Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.832 s
-[INFO] Finished at: 2023-12-15T15:30:40+01:00
+[INFO] Total time:  1.830 s
+[INFO] Finished at: 2023-12-15T16:20:08+01:00
 [INFO] ------------------------------------------------------------------------
