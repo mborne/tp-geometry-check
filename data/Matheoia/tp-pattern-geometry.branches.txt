@@ -1,10 +1,11 @@
-* 0.14
+* initial
   remotes/origin/0.1
   remotes/origin/0.10
   remotes/origin/0.11
   remotes/origin/0.12
   remotes/origin/0.13
   remotes/origin/0.14
+  remotes/origin/0.15
   remotes/origin/0.2
   remotes/origin/0.3
   remotes/origin/0.4
@@ -13,5 +14,5 @@
   remotes/origin/0.7
   remotes/origin/0.8
   remotes/origin/0.9
-  remotes/origin/HEAD -> origin/0.14
+  remotes/origin/HEAD -> origin/initial
   remotes/origin/initial

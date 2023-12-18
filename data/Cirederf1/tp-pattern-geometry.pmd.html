@@ -2,12 +2,12 @@
 <center><h2>Summary</h2></center>
 <table align="center" cellspacing="0" cellpadding="3">
 <tr><th>Rule name</th><th>Number of violations</th></tr>
-<tr><td>CloneMethodReturnTypeMustMatchClassName</td><td align=center>2</td></tr>
+<tr><td>CloneMethodReturnTypeMustMatchClassName</td><td align=center>3</td></tr>
 <tr><td>UseLocaleWithCaseConversions</td><td align=center>6</td></tr>
 <tr><td>LocalVariableNamingConventions</td><td align=center>2</td></tr>
-<tr><td>UncommentedEmptyMethodBody</td><td align=center>1</td></tr>
+<tr><td>UncommentedEmptyMethodBody</td><td align=center>2</td></tr>
 <tr><td>OneDeclarationPerLine</td><td align=center>2</td></tr>
-<tr><td>UnnecessaryLocalBeforeReturn</td><td align=center>4</td></tr>
+<tr><td>UnnecessaryLocalBeforeReturn</td><td align=center>2</td></tr>
 <tr><td>UnnecessaryImport</td><td align=center>1</td></tr>
 </table>
 <center><h2>Detail</h2></center><table align="center" cellspacing="0" cellpadding="3"><tr>
@@ -33,51 +33,51 @@
 </tr>
 <tr> 
 <td align="center">4</td>
+<td width="*%">org/acme/geometry/EnvelopeBuilder.java</td>
+<td align="center" width="5%">68</td>
+<td width="*"><a href="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_documentation.html#uncommentedemptymethodbody">Document empty method body</a></td>
+</tr>
+<tr bgcolor="lightgrey"> 
+<td align="center">5</td>
+<td width="*%">org/acme/geometry/GeometryWithCachedEnvelope.java</td>
+<td align="center" width="5%">46</td>
+<td width="*"><a href="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#clonemethodreturntypemustmatchclassname">The return type of the clone() method must be the class name when implements Cloneable</a></td>
+</tr>
+<tr> 
+<td align="center">6</td>
 <td width="*%">org/acme/geometry/LineString.java</td>
 <td align="center" width="5%">6</td>
 <td width="*"><a href="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport">Unused import 'org.w3c.dom.views.AbstractView'</a></td>
 </tr>
 <tr bgcolor="lightgrey"> 
-<td align="center">5</td>
+<td align="center">7</td>
 <td width="*%">org/acme/geometry/LineString.java</td>
 <td align="center" width="5%">54</td>
 <td width="*"><a href="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablenamingconventions">The local variable name 'points_clone' doesn't match '[a-z][a-zA-Z0-9]*'</a></td>
 </tr>
 <tr> 
-<td align="center">6</td>
+<td align="center">8</td>
 <td width="*%">org/acme/geometry/LineString.java</td>
 <td align="center" width="5%">60</td>
 <td width="*"><a href="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn">Consider simply returning the value vs storing it in local variable 'clone'</a></td>
 </tr>
 <tr bgcolor="lightgrey"> 
-<td align="center">7</td>
-<td width="*%">org/acme/geometry/LineString.java</td>
-<td align="center" width="5%">73</td>
-<td width="*"><a href="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn">Consider simply returning the value vs storing it in local variable 'result'</a></td>
-</tr>
-<tr> 
-<td align="center">8</td>
+<td align="center">9</td>
 <td width="*%">org/acme/geometry/OtherGeometry.java</td>
 <td align="center" width="5%">24</td>
 <td width="*"><a href="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#clonemethodreturntypemustmatchclassname">The return type of the clone() method must be the class name when implements Cloneable</a></td>
 </tr>
-<tr bgcolor="lightgrey"> 
-<td align="center">9</td>
+<tr> 
+<td align="center">10</td>
 <td width="*%">org/acme/geometry/Point.java</td>
 <td align="center" width="5%">42</td>
 <td width="*"><a href="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablenamingconventions">The local variable name 'clone_coord' doesn't match '[a-z][a-zA-Z0-9]*'</a></td>
 </tr>
-<tr> 
-<td align="center">10</td>
-<td width="*%">org/acme/geometry/Point.java</td>
-<td align="center" width="5%">44</td>
-<td width="*"><a href="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn">Consider simply returning the value vs storing it in local variable 'clone'</a></td>
-</tr>
 <tr bgcolor="lightgrey"> 
 <td align="center">11</td>
 <td width="*%">org/acme/geometry/Point.java</td>
-<td align="center" width="5%">55</td>
-<td width="*"><a href="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn">Consider simply returning the value vs storing it in local variable 'result'</a></td>
+<td align="center" width="5%">44</td>
+<td width="*"><a href="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn">Consider simply returning the value vs storing it in local variable 'clone'</a></td>
 </tr>
 <tr> 
 <td align="center">12</td>

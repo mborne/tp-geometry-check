@@ -16,3 +16,5 @@
   remotes/origin/questions/12
   remotes/origin/questions/13
   remotes/origin/questions/14
+  remotes/origin/questions/15
+  remotes/origin/questions/16

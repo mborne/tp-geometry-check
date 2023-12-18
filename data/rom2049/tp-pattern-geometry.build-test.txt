@@ -33,13 +33,13 @@
  T E S T S
 -------------------------------------------------------
 Running org.acme.geometry.EnvelopeTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
 Running org.acme.geometry.LineStringTest
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.acme.geometry.AbstractGeometryTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running org.acme.geometry.CoordinateTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.acme.geometry.PointTest
 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.acme.geometry.LogGeometryVisitorTest
@@ -65,6 +65,6 @@ Tests run: 37, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.312 s
-[INFO] Finished at: 2023-12-17T17:35:55+01:00
+[INFO] Total time:  2.145 s
+[INFO] Finished at: 2023-12-18T21:19:45+01:00
 [INFO] ------------------------------------------------------------------------

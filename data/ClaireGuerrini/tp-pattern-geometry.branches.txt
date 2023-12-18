@@ -1,3 +1,4 @@
 * initial
+  remotes/origin/0.7
   remotes/origin/HEAD -> origin/initial
   remotes/origin/initial

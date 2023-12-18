@@ -2,6 +2,7 @@
   remotes/origin/EXO1
   remotes/origin/Exo10
   remotes/origin/Exo11
+  remotes/origin/Exo12
   remotes/origin/Exo6
   remotes/origin/Exo7
   remotes/origin/Exo8
