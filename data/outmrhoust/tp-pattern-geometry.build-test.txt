@@ -5,55 +5,55 @@
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tp-pattern-geometry ---
-[INFO] Deleting /home/mickael/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target
+[INFO] Deleting /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.6:prepare-agent (default) @ tp-pattern-geometry ---
-[INFO] argLine set to -javaagent:/home/mickael/.m2/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/home/mickael/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target/jacoco.exec
+[INFO] argLine set to -javaagent:/home/MBorne/.m2/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/mnt/data/workspaces/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target/jacoco.exec
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tp-pattern-geometry ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /home/mickael/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/src/main/resources
+[INFO] skip non existing resourceDirectory /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ tp-pattern-geometry ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 15 source files to /home/mickael/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target/classes
+[INFO] Compiling 15 source files to /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tp-pattern-geometry ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /home/mickael/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/src/test/resources
+[INFO] skip non existing resourceDirectory /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ tp-pattern-geometry ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 11 source files to /home/mickael/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target/test-classes
+[INFO] Compiling 11 source files to /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tp-pattern-geometry ---
-[INFO] Surefire report directory: /home/mickael/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target/surefire-reports
+[INFO] Surefire report directory: /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
-Running org.acme.geometry.EnvelopeTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec
-Running org.acme.geometry.LineStringTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
-Running org.acme.geometry.CoordinateTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
-Running org.acme.geometry.PointTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
-Running org.acme.geometry.LenghtVisitorTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.acme.geometry.LogGeometryVisitorTest
-Je suis un point avec x=3.0 et y=4.0.Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Je suis un point avec x=3.0 et y=4.0.Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
+Running org.acme.geometry.LenghtVisitorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.acme.geometry.LineStringTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.acme.geometry.GeometryWithCachedEnvelopeTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.acme.geometry.PointTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.acme.geometry.GeometryCollectionTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
-Running org.acme.geometry.EnvelopeBuilderTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.acme.geometry.WktWriterTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running org.acme.geometry.WktVisitorTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
-Running org.acme.geometry.GeometryWithCachedEnvelopeTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
-Running org.acme.geometry.WktWriterTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.acme.geometry.EnvelopeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.acme.geometry.CoordinateTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.acme.geometry.EnvelopeBuilderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 
 Results :
 
@@ -61,14 +61,14 @@ Tests run: 58, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ tp-pattern-geometry ---
-[INFO] Building jar: /home/mickael/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target/tp-pattern-geometry-0.1.0-SNAPSHOT.jar
+[INFO] Building jar: /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target/tp-pattern-geometry-0.1.0-SNAPSHOT.jar
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.6:report (default-cli) @ tp-pattern-geometry ---
-[INFO] Loading execution data file /home/mickael/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target/jacoco.exec
+[INFO] Loading execution data file /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/outmrhoust/tp-pattern-geometry/target/jacoco.exec
 [INFO] Analyzed bundle 'tp-pattern-geometry' with 12 classes
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.508 s
-[INFO] Finished at: 2023-12-18T21:20:10+01:00
+[INFO] Total time:  4.114 s
+[INFO] Finished at: 2023-12-19T17:54:17+01:00
 [INFO] ------------------------------------------------------------------------

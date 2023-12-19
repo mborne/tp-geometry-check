@@ -63,10 +63,10 @@
     "username": "VictorienO",
     "repositoryUrl": "https://github.com/VictorienO/tp-pattern-geometry-victorien",
     "branchName": "initial",
-    "commitId": "8e0facb583b9eed0daeb88b937d1c504b2ee15bb",
+    "commitId": "2dcc103a1c1d1ec5d5aa0bd5cf3c078aed2ebb52",
     "build": true,
     "test": true,
-    "coverage": 98.7,
+    "coverage": 98.3,
     "pmd": true
   },
   {
