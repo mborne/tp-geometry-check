@@ -26,7 +26,7 @@
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ tp-pattern-geometry ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 2 source files to /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/ToffoluttiVittorio/tp-pattern-geometry/target/test-classes
+[INFO] Compiling 1 source file to /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/ToffoluttiVittorio/tp-pattern-geometry/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tp-pattern-geometry ---
 [INFO] Tests are skipped.
@@ -36,6 +36,6 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.298 s
-[INFO] Finished at: 2023-12-19T17:54:24+01:00
+[INFO] Total time:  2.944 s
+[INFO] Finished at: 2023-12-20T14:54:11+01:00
 [INFO] ------------------------------------------------------------------------
