@@ -63,10 +63,10 @@
     "username": "VictorienO",
     "repositoryUrl": "https://github.com/VictorienO/tp-pattern-geometry-victorien",
     "branchName": "initial",
-    "commitId": "2dcc103a1c1d1ec5d5aa0bd5cf3c078aed2ebb52",
+    "commitId": "4006907115e724c9defec57c35d2ed38c9b27e0f",
     "build": true,
     "test": true,
-    "coverage": 98.3,
+    "coverage": 97,
     "pmd": true
   },
   {
@@ -113,10 +113,10 @@
     "username": "CecileTalec",
     "repositoryUrl": "https://github.com/CecileTalec/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "731272aebe8e4f9bb36d70c31f572f5640b389dd",
+    "commitId": "464de0d9fb9173852fedc7eecda321c30b4c3798",
     "build": true,
     "test": true,
-    "coverage": 96.8,
+    "coverage": 95.7,
     "pmd": true
   },
   {
