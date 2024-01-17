@@ -5,6 +5,7 @@
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tp-pattern-geometry ---
+[INFO] Deleting /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/VGiudicelli1/tp-pattern-geometry/target
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.6:prepare-agent (default) @ tp-pattern-geometry ---
 [INFO] argLine set to -javaagent:/home/MBorne/.m2/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/mnt/data/workspaces/workspace_formation/tp-geometry-check/data/VGiudicelli1/tp-pattern-geometry/target/jacoco.exec
@@ -33,6 +34,6 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.021 s
-[INFO] Finished at: 2024-01-17T18:02:39+01:00
+[INFO] Total time:  1.905 s
+[INFO] Finished at: 2024-01-17T18:17:34+01:00
 [INFO] ------------------------------------------------------------------------
