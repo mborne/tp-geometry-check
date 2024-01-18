@@ -35,7 +35,7 @@
  T E S T S
 -------------------------------------------------------
 Running org.acme.geometry.CoordinateTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec
 
 Results :
 
@@ -51,6 +51,6 @@ Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.078 s
-[INFO] Finished at: 2024-01-17T18:18:16+01:00
+[INFO] Total time:  2.083 s
+[INFO] Finished at: 2024-01-18T09:00:14+01:00
 [INFO] ------------------------------------------------------------------------

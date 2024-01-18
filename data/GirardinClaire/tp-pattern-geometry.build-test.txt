@@ -33,13 +33,13 @@
  T E S T S
 -------------------------------------------------------
 Running org.acme.geometry.LineStringTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
 Running org.acme.geometry.PointTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.acme.geometry.WktWriterTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.acme.geometry.GeometryVisitorTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.acme.geometry.EnvelopeTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.acme.geometry.CoordinateTest
@@ -59,6 +59,6 @@ Tests run: 24, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.273 s
-[INFO] Finished at: 2024-01-17T18:18:47+01:00
+[INFO] Total time:  2.287 s
+[INFO] Finished at: 2024-01-18T09:00:48+01:00
 [INFO] ------------------------------------------------------------------------

@@ -143,10 +143,10 @@
     "username": "Lzrtn",
     "repositoryUrl": "https://github.com/Lzrtn/tp-pattern-geometry",
     "branchName": "initial",
-    "commitId": "826cdb5149c63892c577344073d1e2168bf30e98",
+    "commitId": "5bea72c41a2b2aa3df1d8ebefdee2cc76a80a75c",
     "build": true,
-    "test": false,
-    "coverage": 0,
+    "test": true,
+    "coverage": 88.2,
     "pmd": true
   }
 ]
