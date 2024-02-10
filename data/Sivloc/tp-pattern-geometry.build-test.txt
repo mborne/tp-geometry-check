@@ -5,49 +5,49 @@
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ tp-pattern-geometry ---
-[INFO] Deleting /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target
+[INFO] Deleting /home/mickael/workspaces/workspace_correction/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.6:prepare-agent (default) @ tp-pattern-geometry ---
-[INFO] argLine set to -javaagent:/home/MBorne/.m2/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/mnt/data/workspaces/workspace_formation/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target/jacoco.exec
+[INFO] argLine set to -javaagent:/home/mickael/.m2/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/home/mickael/workspaces/workspace_correction/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target/jacoco.exec
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tp-pattern-geometry ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/Sivloc/tp-pattern-geometry/src/main/resources
+[INFO] skip non existing resourceDirectory /home/mickael/workspaces/workspace_correction/tp-geometry-check/data/Sivloc/tp-pattern-geometry/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ tp-pattern-geometry ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 11 source files to /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target/classes
+[INFO] Compiling 11 source files to /home/mickael/workspaces/workspace_correction/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tp-pattern-geometry ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/Sivloc/tp-pattern-geometry/src/test/resources
+[INFO] skip non existing resourceDirectory /home/mickael/workspaces/workspace_correction/tp-geometry-check/data/Sivloc/tp-pattern-geometry/src/test/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ tp-pattern-geometry ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 8 source files to /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target/test-classes
-[WARNING] /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/Sivloc/tp-pattern-geometry/src/test/java/org/acme/geometry/EnvelopeTest.java: /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/Sivloc/tp-pattern-geometry/src/test/java/org/acme/geometry/EnvelopeTest.java uses or overrides a deprecated API.
-[WARNING] /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/Sivloc/tp-pattern-geometry/src/test/java/org/acme/geometry/EnvelopeTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] Compiling 8 source files to /home/mickael/workspaces/workspace_correction/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target/test-classes
+[WARNING] /home/mickael/workspaces/workspace_correction/tp-geometry-check/data/Sivloc/tp-pattern-geometry/src/test/java/org/acme/geometry/EnvelopeTest.java: /home/mickael/workspaces/workspace_correction/tp-geometry-check/data/Sivloc/tp-pattern-geometry/src/test/java/org/acme/geometry/EnvelopeTest.java uses or overrides a deprecated API.
+[WARNING] /home/mickael/workspaces/workspace_correction/tp-geometry-check/data/Sivloc/tp-pattern-geometry/src/test/java/org/acme/geometry/EnvelopeTest.java: Recompile with -Xlint:deprecation for details.
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tp-pattern-geometry ---
-[INFO] Surefire report directory: /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target/surefire-reports
+[INFO] Surefire report directory: /home/mickael/workspaces/workspace_correction/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
-Running org.acme.geometry.PointTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec
-Running org.acme.geometry.WktWriterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
-Running org.acme.geometry.GeometryVisitorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.acme.geometry.EnvelopeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 sec
 Running org.acme.geometry.AbstractGeometryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.acme.geometry.CoordinateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.acme.geometry.PointTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.acme.geometry.GeometryVisitorTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running org.acme.geometry.WktVisitorTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
-Running org.acme.geometry.EnvelopeTest
+Running org.acme.geometry.WktWriterTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
-Running org.acme.geometry.CoordinateTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 
 Results :
 
@@ -55,14 +55,14 @@ Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] 
 [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ tp-pattern-geometry ---
-[INFO] Building jar: /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target/tp-pattern-geometry-0.1.0-SNAPSHOT.jar
+[INFO] Building jar: /home/mickael/workspaces/workspace_correction/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target/tp-pattern-geometry-0.1.0-SNAPSHOT.jar
 [INFO] 
 [INFO] --- jacoco-maven-plugin:0.8.6:report (default-cli) @ tp-pattern-geometry ---
-[INFO] Loading execution data file /mnt/data/workspaces/workspace_formation/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target/jacoco.exec
+[INFO] Loading execution data file /home/mickael/workspaces/workspace_correction/tp-geometry-check/data/Sivloc/tp-pattern-geometry/target/jacoco.exec
 [INFO] Analyzed bundle 'tp-pattern-geometry' with 9 classes
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.341 s
-[INFO] Finished at: 2024-01-18T09:00:57+01:00
+[INFO] Total time:  3.160 s
+[INFO] Finished at: 2024-02-10T12:21:55+01:00
 [INFO] ------------------------------------------------------------------------
