@@ -19,7 +19,7 @@ Truc :
     ✔ test constructor with coordinates
 
 
-  6 passing (13ms)
+  6 passing (16ms)
   1 failing
 
   1) test Enveloppe

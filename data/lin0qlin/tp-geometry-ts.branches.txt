@@ -1,7 +1,9 @@
-* main
-  remotes/origin/HEAD -> origin/main
+* dev0.11
+  remotes/origin/HEAD -> origin/dev0.11
+  remotes/origin/dev0.11
   remotes/origin/main
   remotes/origin/main0.1
+  remotes/origin/main0.10
   remotes/origin/main0.2
   remotes/origin/main0.3
   remotes/origin/main0.4

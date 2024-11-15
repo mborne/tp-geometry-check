@@ -45,7 +45,7 @@
     ✔ test sur lineString empty et non empty
 
 
-  24 passing (16ms)
+  24 passing (21ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

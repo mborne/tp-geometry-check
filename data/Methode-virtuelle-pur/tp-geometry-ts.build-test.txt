@@ -4,6 +4,12 @@
 
 
 
+  AbstractGeometry and WktVisitor Tests
+    ✔ should return WKT for a Point
+    ✔ should return WKT for an empty Point
+    ✔ should return WKT for a LineString
+    ✔ should return WKT for an empty LineString
+
   EnvelopeBuilder Tests
     ✔ test constructeur
     ✔ envelope vide si moins de 2 points
@@ -49,17 +55,18 @@
     ✔ test WTK pour un mauvais type de geometry
 
 
-  32 passing (20ms)
+  36 passing (22ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |     100 |    95.18 |     100 |     100 |                   
+All files              |     100 |    95.45 |     100 |     100 |                   
+ AbstractGeometry.ts   |     100 |      100 |     100 |     100 |                   
  Envelope.ts           |     100 |    92.85 |     100 |     100 | 1                 
  EnvelopeBuilder.ts    |     100 |      100 |     100 |     100 |                   
  LineString.ts         |     100 |      100 |     100 |     100 |                   
  LogGeometryVisitor.ts |     100 |    81.81 |     100 |     100 | 1-8               
  Point.ts              |     100 |      100 |     100 |     100 |                   
- WktVisitor.ts         |     100 |     90.9 |     100 |     100 | 1                 
+ WktVisitor.ts         |     100 |       90 |     100 |     100 | 1                 
  WktWriter.ts          |     100 |      100 |     100 |     100 |                   
 -----------------------|---------|----------|---------|---------|-------------------

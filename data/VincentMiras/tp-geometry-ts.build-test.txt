@@ -4,12 +4,17 @@
 
 
 
+  test AbstractGeometry
+    ✔ test asText
+
   test Envelope
     ✔ test default constructor
     ✔ test constructor avec coordonnées
 
   test EnvelopeBuilder
     ✔ test build
+    ✔ test visite Point
+    ✔ test visite LineString
 
   test Linestring
     ✔ test default constructor
@@ -17,25 +22,42 @@
     ✔ test clone LineString
     ✔ test Envelope LineString
 
+  test LogGeometryVisitor
+Je suis un point vide
+Je suis un point vide.
+Je suis un point avec x=3 et y=4.
+Je suis un point avec x=3 et y=4.
+Je suis une polyligne vide
+Je suis une polyligne vide.
+Je suis une polyligne définie par 2 point(s).
+Je suis une polyligne définie par 2 point(s).
+    ✔ test accept
+
   test Point
     ✔ test default constructor
     ✔ test constructor with coordinates
     ✔ test clone Point
     ✔ test Envelope Point
 
+  test WktVisitor
+    ✔ test accept
+
   test WktWriter
-    ✔ test default constructor
+    ✔ test complet
 
 
-  12 passing (20ms)
+  17 passing (19ms)
 
---------------------|---------|----------|---------|---------|-------------------
-File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
---------------------|---------|----------|---------|---------|-------------------
-All files           |   97.91 |    94.93 |     100 |   97.84 |                   
- Envelope.ts        |     100 |    95.23 |     100 |     100 | 1                 
- EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
- LineString.ts      |     100 |    91.66 |     100 |     100 | 50                
- Point.ts           |     100 |      100 |     100 |     100 |                   
- WktWriter.ts       |    91.3 |    88.23 |     100 |    90.9 | 27,36             
---------------------|---------|----------|---------|---------|-------------------
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |   98.56 |    94.39 |     100 |   98.48 |                   
+ AbstractGeometry.ts   |     100 |      100 |     100 |     100 |                   
+ Envelope.ts           |     100 |    95.23 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts    |     100 |      100 |     100 |     100 |                   
+ LineString.ts         |     100 |    91.66 |     100 |     100 | 53                
+ LogGeometryVisitor.ts |     100 |     90.9 |     100 |     100 | 1                 
+ Point.ts              |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts         |     100 |       90 |     100 |     100 | 1                 
+ WktWriter.ts          |    91.3 |    88.23 |     100 |    90.9 | 27,36             
+-----------------------|---------|----------|---------|---------|-------------------
