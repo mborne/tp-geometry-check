@@ -4,16 +4,55 @@
 
 
 
+  test Wktvisitor
+    ✔ test getResult
+    ✔ test get Envelope 
+
+  test Envelope
+    ✔ test default constructor
+    ✔ test constructor with coordinate
+    ✔ test ToString
+    ✔ test Emptiness
+
+  test EnvelopeBuilder
+    ✔ test default constructor
+    ✔ test insertertion
+    ✔ test build
+
+  test LineString
+    ✔ test default constructor
+    ✔ test constructor with coordinates
+    ✔ test emptiness
+    ✔ test translate
+    ✔ test clone
+    ✔ test get envelope
+
   test Point
     ✔ test default constructor
     ✔ test constructor with coordinates
+    ✔ test emptiness
+    ✔ test translate
+    ✔ test clone
+    ✔ test get envelope
+
+  test Wktvisitor
+    ✔ test getResult
+
+  test WktWriter
+    ✔ test write
 
 
-  2 passing (10ms)
+  23 passing (19ms)
 
-----------|---------|----------|---------|---------|-------------------
-File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------|---------|----------|---------|---------|-------------------
-All files |     100 |       90 |     100 |     100 |                   
- Point.ts |     100 |       90 |     100 |     100 | 1                 
-----------|---------|----------|---------|---------|-------------------
+---------------------|---------|----------|---------|---------|-------------------
+File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+---------------------|---------|----------|---------|---------|-------------------
+All files            |      99 |    93.58 |     100 |   98.96 |                   
+ AbstractGeometry.ts |     100 |      100 |     100 |     100 |                   
+ Envelope.ts         |     100 |    83.33 |     100 |     100 | 1,13              
+ EnvelopeBuilder.ts  |     100 |      100 |     100 |     100 |                   
+ LineString.ts       |     100 |       90 |     100 |     100 | 45                
+ Point.ts            |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts       |     100 |     90.9 |     100 |     100 | 1                 
+ WktWriter.ts        |   94.44 |     92.3 |     100 |   94.11 | 23                
+---------------------|---------|----------|---------|---------|-------------------

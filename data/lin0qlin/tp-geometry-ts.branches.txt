@@ -2,3 +2,11 @@
   remotes/origin/HEAD -> origin/main
   remotes/origin/main
   remotes/origin/main0.1
+  remotes/origin/main0.2
+  remotes/origin/main0.3
+  remotes/origin/main0.4
+  remotes/origin/main0.5
+  remotes/origin/main0.6
+  remotes/origin/main0.7
+  remotes/origin/main0.8
+  remotes/origin/main0.9

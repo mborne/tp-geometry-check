@@ -4,6 +4,17 @@
 
 
 
+  test  AbstractGeom
+    ✔ test  AbstractGeom
+
+  test Envelope
+xmin : 0 xmax : 2 ymin : 0 ymax : 3 
+
+    ✔ test default constructor
+
+  test  GeometryWithCache
+    ✔ test  GeometryWithCache
+
   test LinseString
     ✔ test default constructor
     ✔ test constructor with coordinates
@@ -12,13 +23,25 @@
     ✔ test default constructor
     ✔ test constructor with coordinates
 
+  test  WktWriter
+Je suis un point avec x=3 et y=4
+Je suis une polyligne définie par 2 point(s).
+    ✔ test  WktWriter
 
-  4 passing (11ms)
 
----------------|---------|----------|---------|---------|-------------------
-File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------|---------|----------|---------|---------|-------------------
-All files      |   95.23 |     91.3 |    92.3 |   95.23 |                   
- LineString.ts |     100 |    88.88 |     100 |     100 | 1                 
- Point.ts      |      90 |    92.85 |   85.71 |      90 | 19                
----------------|---------|----------|---------|---------|-------------------
+  8 passing (15ms)
+
+-------------------------------|---------|----------|---------|---------|-------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------------------|---------|----------|---------|---------|-------------------
+All files                      |   88.46 |    83.01 |   91.07 |   88.18 |                   
+ AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
+ Envelope.ts                   |     100 |    63.63 |     100 |     100 | 1,18-30           
+ EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
+ GeometryWithCachedEnvelope.ts |      50 |    85.71 |    37.5 |      50 | 13-24,33          
+ LineString.ts                 |     100 |      100 |     100 |     100 |                   
+ LogGeometryVisitor.ts         |      75 |       70 |     100 |      75 | 12,19             
+ Point.ts                      |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts                 |      80 |       70 |     100 |      80 | 12,19             
+ WktWriter.ts                  |      80 |    78.57 |     100 |   78.94 | 14,22,35-37       
+-------------------------------|---------|----------|---------|---------|-------------------

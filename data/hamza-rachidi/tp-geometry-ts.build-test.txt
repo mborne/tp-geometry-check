@@ -4,21 +4,59 @@
 
 
 
+  test de AbstractGeometry
+    ✔ test de la fonction asText
+
+  test Envelope
+    ✔ test Default Constructor
+    ✔ test Envelope with two coordinates
+
+  test Envelope Builder
+    ✔ test EnvelopeBuilder class
+
   test LineString
     ✔ test default constructor
     ✔ test constructor with points
+    ✔ test translate lineString
+    ✔ test clone linestring
+    ✔ test getEnvelope à partir de LineString 
+
+  test visiteur LogGeometryVisitor
+    ✔ test sur point empty 
+    ✔ test sur point non empty 
+    ✔ test sur lineString empty 
+    ✔ test sur lineString non  empty 
 
   test Point
     ✔ test default constructor
     ✔ test constructor with coordinates
+    ✔ test translate point
+    ✔ test clone point
+    ✔ test getEnvelope à partir de Point 
+
+  test du visiteur
+    ✔ test sur point empty 
+    ✔ test sur point non empty
+    ✔ test sur lineString empty
+    ✔ test sur lineString non empty
+
+  test de conversion d'une géométrie au format WKT
+    ✔ test sur point empty et point non empty
+    ✔ test sur lineString empty et non empty
 
 
-  4 passing (11ms)
+  24 passing (16ms)
 
----------------|---------|----------|---------|---------|-------------------
-File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------|---------|----------|---------|---------|-------------------
-All files      |     100 |    88.88 |     100 |     100 |                   
- LineString.ts |     100 |     87.5 |     100 |     100 | 1                 
- Point.ts      |     100 |       90 |     100 |     100 | 1                 
----------------|---------|----------|---------|---------|-------------------
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |   99.17 |    94.17 |     100 |   99.15 |                   
+ AbstractGeometry.ts   |     100 |      100 |     100 |     100 |                   
+ Envelope.ts           |     100 |       95 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts    |     100 |    95.45 |     100 |     100 | 21                
+ LineString.ts         |     100 |      100 |     100 |     100 |                   
+ LogGeometryVisitor.ts |     100 |    81.81 |     100 |     100 | 1-7               
+ Point.ts              |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts         |     100 |       90 |     100 |     100 | 1                 
+ WktWriter.ts          |      95 |    92.85 |     100 |   94.73 | 35                
+-----------------------|---------|----------|---------|---------|-------------------

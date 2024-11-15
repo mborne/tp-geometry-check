@@ -4,12 +4,23 @@
 
 
 
+  test Enveloppe
+    ✔ test default constructor
+    ✔ test builder
+
+  test GeometryWithCachedEnvelope
+    ✔ test cache envelope
+
   test LineString
     ✔ test default constructor
     ✔ test constructor with Point
     ✔ test isEmpty
     ✔ test translate
     ✔ test clone
+    ✔ test LogGeometryVisitor
+    ✔ test wkt
+    ✔ test asText
+    ✔ test getEnveloppe
 
   test Point
     ✔ test default constructor
@@ -17,14 +28,28 @@
     ✔ test isEmpty
     ✔ test Translate
     ✔ test clone
+    ✔ test LogGeometryVisitor
+    ✔ test WktVisitor
+    ✔ test asText
+    ✔ test getEnveloppe
+
+  test WktWriter
+    ✔ test write
 
 
-  10 passing (13ms)
+  22 passing (19ms)
 
----------------|---------|----------|---------|---------|-------------------
-File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------|---------|----------|---------|---------|-------------------
-All files      |     100 |    88.88 |     100 |     100 |                   
- LineString.ts |     100 |     87.5 |     100 |     100 | 1                 
- Point.ts      |     100 |       90 |     100 |     100 | 1                 
----------------|---------|----------|---------|---------|-------------------
+-------------------------------|---------|----------|---------|---------|-------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------------------|---------|----------|---------|---------|-------------------
+All files                      |    98.3 |    95.04 |   96.36 |   98.23 |                   
+ AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
+ Envelope.ts                   |     100 |    92.85 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
+ GeometryWithCachedEnvelope.ts |   83.33 |    85.71 |   77.77 |   83.33 | 28,34             
+ LineString.ts                 |     100 |      100 |     100 |     100 |                   
+ LogGeometryVisitor.ts         |     100 |    81.81 |     100 |     100 | 1-7               
+ Point.ts                      |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts                 |     100 |       90 |     100 |     100 | 1                 
+ WktWriter.ts                  |     100 |      100 |     100 |     100 |                   
+-------------------------------|---------|----------|---------|---------|-------------------

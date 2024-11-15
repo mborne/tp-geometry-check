@@ -4,16 +4,38 @@
 
 
 
+  test Envelope
+    ✔ test default constructor
+    ✔ test constructor avec coordonnées
+
+  test EnvelopeBuilder
+    ✔ test build
+
+  test Linestring
+    ✔ test default constructor
+    ✔ test constructor with coordinates
+    ✔ test clone LineString
+    ✔ test Envelope LineString
+
   test Point
     ✔ test default constructor
     ✔ test constructor with coordinates
+    ✔ test clone Point
+    ✔ test Envelope Point
+
+  test WktWriter
+    ✔ test default constructor
 
 
-  2 passing (5ms)
+  12 passing (20ms)
 
-----------|---------|----------|---------|---------|-------------------
-File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------|---------|----------|---------|---------|-------------------
-All files |     100 |       90 |     100 |     100 |                   
- Point.ts |     100 |       90 |     100 |     100 | 1                 
-----------|---------|----------|---------|---------|-------------------
+--------------------|---------|----------|---------|---------|-------------------
+File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------|---------|----------|---------|---------|-------------------
+All files           |   97.91 |    94.93 |     100 |   97.84 |                   
+ Envelope.ts        |     100 |    95.23 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
+ LineString.ts      |     100 |    91.66 |     100 |     100 | 50                
+ Point.ts           |     100 |      100 |     100 |     100 |                   
+ WktWriter.ts       |    91.3 |    88.23 |     100 |    90.9 | 27,36             
+--------------------|---------|----------|---------|---------|-------------------

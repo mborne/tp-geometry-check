@@ -9,7 +9,7 @@
     ✔ test constructor with coordinates
 
 
-  2 passing (8ms)
+  2 passing (6ms)
 
 ----------|---------|----------|---------|---------|-------------------
 File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

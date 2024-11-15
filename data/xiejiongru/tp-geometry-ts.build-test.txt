@@ -4,6 +4,10 @@
 
 
 
+  test Enveloppe
+    1) test default constructor
+    ✔ test builder
+
   test LineString
     ✔ test default constructor
     ✔ test constructor with points
@@ -15,12 +19,29 @@ Truc :
     ✔ test constructor with coordinates
 
 
-  5 passing (12ms)
+  6 passing (13ms)
+  1 failing
 
----------------|---------|----------|---------|---------|-------------------
-File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------|---------|----------|---------|---------|-------------------
-All files      |     100 |     91.3 |     100 |     100 |                   
- LineString.ts |     100 |     92.3 |     100 |     100 | 1                 
- Point.ts      |     100 |       90 |     100 |     100 | 1                 
----------------|---------|----------|---------|---------|-------------------
+  1) test Enveloppe
+       test default constructor:
+
+      AssertionError: expected 'Envelope: 0,0 5,5' to equal 'bottomLeft : 0 0 | topRight : 5 5'
+      + expected - actual
+
+      -Envelope: 0,0 5,5
+      +bottomLeft : 0 0 | topRight : 5 5
+      
+      at Context.<anonymous> (test/EnvelopeBuilder.spec.ts:2:1494)
+      at process.processImmediate (node:internal/timers:478:21)
+
+
+
+--------------------|---------|----------|---------|---------|-------------------
+File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------|---------|----------|---------|---------|-------------------
+All files           |     100 |    94.64 |     100 |     100 |                   
+ Envelope.ts        |     100 |    91.66 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
+ LineString.ts      |     100 |     92.3 |     100 |     100 | 1                 
+ Point.ts           |     100 |    94.11 |     100 |     100 | 1                 
+--------------------|---------|----------|---------|---------|-------------------

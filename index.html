@@ -20,7 +20,7 @@
     <script type="text/javascript">
 
         function loadResults() {
-            $.getJSON('./results.json', function (results) {
+            $.getJSON('./results.json?_t=202411151645', function (results) {
                 let dataSet = results.map(function(result){
                     return [
                         `<a href="${result.repositoryUrl}" target="_blank">${result.username}</a>`,

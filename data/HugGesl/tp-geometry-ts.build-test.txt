@@ -7,18 +7,78 @@
   test Point
     ✔ test default constructor
     ✔ test constructor with coordinates
+    ✔ test isEmpty
+    ✔ test translate
+    ✔ test clone
+    ✔ test getEnvelope avec coordonnées
+    ✔ test getEnvelope avec valeur par défaut
 
   test Linestring
     ✔ test default constructor
     ✔ test constructor with coordinates
+    ✔ test isEmpty
+    ✔ test translate
+    ✔ test clone
+    ✔ test getEnvelope avec coordonnées
+    ✔ test getEnvelope avec valeur par défaut
+
+  test Envelope
+    ✔ test constructeur avec coordonnées définies
+    ✔ test constructeur avec valeurs par défaut
+    ✔ test méthode isEmpty quand les deux coordonnées sont définies
+    ✔ test méthode isEmpty quand une coordonnée est manquante
+    ✔ test getters pour Xmin, Ymin, Xmax, Ymax
+    ✔ test getters quand l'enveloppe est vide
+
+  test EnvelopeBuilder
+    ✔ test constructeur et insertion de coordonnées
+    ✔ test avec des coordonnées négatives
+    ✔ test méthode build avec absence d'insertion
+
+  test WktWriter
+POINT(3 4)
+    ✔ test avec un point
+LINESTRING(3 4 5 8)
+    ✔ test avec une linestring
+
+  test LogGeometry
+Je suis un point avec x=3 et y=4
+    ✔ test visitorPoint
+Je suis une polyligne définie par 2 points.
+    ✔ test visitorLinestring
+
+  test WktVisitor
+POINT(3 4)
+    ✔ test getResult
+
+  test WktVisitor
+POINT(3 4)
+    ✔ test avec point
+
+  test getEnvelope
+    ✔ test avec point
+    ✔ test avec linestring
+
+  test GeometryWithCachedEnvelope
+GeometryWithCachedEnvelope { original: Point { coordinate: [ 3, 4 ] } }
+Envelope { topRight: [ 3, 4 ], bottomLeft: [ 3, 4 ] }
+Envelope { topRight: [ 3, 4 ], bottomLeft: [ 3, 4 ] }
+    ✔ test getEnvelope
 
 
-  4 passing (12ms)
+  32 passing (20ms)
 
----------------|---------|----------|---------|---------|-------------------
-File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------|---------|----------|---------|---------|-------------------
-All files      |     100 |    77.27 |     100 |     100 |                   
- Linestring.ts |     100 |       80 |     100 |     100 | 1,14              
- Point.ts      |     100 |       75 |     100 |     100 | 1,20-24           
----------------|---------|----------|---------|---------|-------------------
+-------------------------------|---------|----------|---------|---------|-------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------------------|---------|----------|---------|---------|-------------------
+All files                      |   85.96 |    88.54 |   89.47 |   86.36 |                   
+ AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
+ Envelope.ts                   |     100 |       95 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
+ GeometryWithCachedEnvelope.ts |   41.66 |       75 |    37.5 |   41.66 | 12-16,23-37       
+ Linestring.ts                 |     100 |       90 |     100 |     100 | 15                
+ LogGeometryVisitor.ts         |      75 |       70 |     100 |      75 | 8,17              
+ Point.ts                      |     100 |    83.33 |     100 |     100 | 23-27             
+ WktVisitor.ts                 |      40 |    83.33 |      80 |   44.44 | 16-21             
+ WktWriter.ts                  |   92.85 |       90 |     100 |    92.3 | 17                
+-------------------------------|---------|----------|---------|---------|-------------------

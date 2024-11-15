@@ -4,22 +4,122 @@
 
 
 
-  test LineString
-    ✔ test default constructor
-    ✔ test constructor with points
-    ✔ return correct point at a given index
+  AbstractGeometry
+    asText()
+      ✔ should have empty point
+      ✔ should have coordinates point
+      ✔ should have empty linestring
+      ✔ should have coordinates linestring
 
-  test Point
-    ✔ test default constructor
-    ✔ test constructor with coordinates
+  Envelope
+    Default Constructor
+      ✔ should create an empty envelope by default
+      ✔ should create a non-empty envelope with given coordinates
+    getX() and getY()
+      ✔ should return correct min and max values
+    toString()
+      ✔ should convert envelope to correct string format
+    isEmpty()
+      ✔ should be empty if initialized with NaN values
+
+  EnvelopeBuilder
+    Default Constructor
+      ✔ should create an empty envelope
+      ✔ should return NaN values in the envelope by default
+    Constructor with Coordinates
+      ✔ should create a non-empty envelope with multiple coordinates
+      ✔ should handle a single coordinate insertion correctly
+    toString()
+      ✔ should convert envelope to string correctly
+
+  GeometryWithCachedEnvelope
+    getEnvelope()
+      ✔ should cache the envelope after the first calculation
+    translate()
+      ✔ should invalidate the cache when translated
+    getType()
+      ✔ should return the correct type
+    isEmpty()
+      ✔ should return the correct isEmpty status
+    clone()
+      ✔ should clone the original geometry
+    accept()
+      ✔ should accept a visitor
+
+  LineString
+    Default Constructor
+      ✔ should have type 'LineString'
+      ✔ should be empty with zero points
+    Constructor with Points
+      ✔ should initialize with given points
+      ✔ should return the correct point at a given index
+    translate()
+      ✔ should correctly translate all points
+    clone()
+      ✔ should create a distinct clone with identical points
+      ✔ should not affect the original line when translated
+    getEnvelope()
+      ✔ should return correct bounding box for all points
+      ✔ should return an empty bounding box when no points
+    visitLineString Throw Error
+      ✔ should throw an error when encountering an invalid point
+
+  LogGeometryVisitor
+    visitPoint()
+      ✔ should log 'Je suis un point vide.' for an empty point
+      ✔ should log coordinates for a non-empty point
+      ✔ should log 'Je suis une polyligne vide.' for an empty linestring
+      ✔ should log number of points for a non-empty linestring
+
+  Point
+    Default Constructor
+      ✔ should have NaN coordinates
+      ✔ should have type 'Point'
+      ✔ should have NaN values for x() and y()
+      ✔ should be empty
+    Constructor with Coordinates
+      ✔ should set correct coordinates
+      ✔ should return correct x and y values
+      ✔ should not be empty
+    clone()
+      ✔ should clone a point with identical but distinct properties
+      ✔ should not affect original point when translated
+    getEnvelope()
+      ✔ should return an envelope with the same coordinates as the point
+      ✔ should return an empty envelope for a point with NaN coordinates
+    visitPoint()
+      ✔ should call visitPoint when accepting a Point
+
+  WktVisitor
+    visitPoint()
+      ✔ should have empty point
+      ✔ should have coordinates point
+    visitLineString()
+      ✔ should have no lineString
+      ✔ should have coordinates in linestring
+
+  WktWriter
+    writer()
+      ✔ should have empty point
+      ✔ should have point
+      ✔ should have empty linestring
+      ✔ should have linestring
+      ✔ should throw an error if geometry type is not supported
 
 
-  5 passing (14ms)
+  55 passing (26ms)
 
----------------|---------|----------|---------|---------|-------------------
-File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------|---------|----------|---------|---------|-------------------
-All files      |     100 |    88.23 |     100 |     100 |                   
- LineString.ts |     100 |     87.5 |     100 |     100 | 1                 
- Point.ts      |     100 |    88.88 |     100 |     100 | 1                 
----------------|---------|----------|---------|---------|-------------------
+-------------------------------|---------|----------|---------|---------|-------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------------------|---------|----------|---------|---------|-------------------
+All files                      |     100 |    91.66 |     100 |     100 |                   
+ AbstractGeometry.ts           |     100 |     87.5 |     100 |     100 | 27                
+ Envelope.ts                   |     100 |    91.66 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
+ GeometryWithCachedEnvelope.ts |     100 |    85.71 |     100 |     100 | 1                 
+ LineString.ts                 |     100 |     87.5 |     100 |     100 | 1                 
+ LogGeometryVisitor.ts         |     100 |    84.61 |     100 |     100 | 1,29              
+ Point.ts                      |     100 |    88.88 |     100 |     100 | 1                 
+ WktVisitor.ts                 |     100 |     90.9 |     100 |     100 | 1                 
+ WktWriter.ts                  |     100 |      100 |     100 |     100 |                   
+-------------------------------|---------|----------|---------|---------|-------------------
