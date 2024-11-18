@@ -33,6 +33,13 @@ LineString(3,4 3,4)
 Point(1 ,2)
     ✔ test default constructor
 
+  test LengthVisitor
+Je suis une Polyligne Vide
+Je suis une Polyligne de 2 points
+Je suis un Point Vide
+Je suis un point dont x=3 et y=4
+    ✔ test accept
+
   test LineString
     ✔ test default constructor
 Je suis une Polyligne Vide
@@ -76,17 +83,18 @@ LineString(0.5,0 1,1)
     ✔ test write
 
 
-  35 passing (23ms)
+  36 passing (26ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------------|---------|----------|---------|---------|-------------------
-All files                      |     100 |    95.79 |     100 |     100 |                   
+All files                      |   95.76 |    92.53 |   98.83 |    95.7 |                   
  AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
  Envelope.ts                   |     100 |    92.85 |     100 |     100 | 1                 
  EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
  GeometryCollection.ts         |     100 |      100 |     100 |     100 |                   
  GeometryWithCachedEnvelope.ts |     100 |    85.71 |     100 |     100 | 12                
+ LengthVisitor.ts              |   67.74 |    66.66 |      80 |   66.66 | 46-57             
  LineString.ts                 |     100 |      100 |     100 |     100 |                   
  LogGeometryVisitor.ts         |     100 |    91.66 |     100 |     100 | 1                 
  Point.ts                      |     100 |      100 |     100 |     100 |                   

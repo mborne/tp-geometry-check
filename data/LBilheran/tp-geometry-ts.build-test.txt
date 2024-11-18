@@ -6,6 +6,11 @@
 
   test AbstractGeometry
     ✔ test asText
+    ✔ test asText
+    ✔ test asText
+    ✔ test asText
+    ✔ test asText
+    ✔ test asText
 
   test Envelope
     ✔ test default constructor
@@ -30,6 +35,14 @@
     ✔ test getEnvelope
     ✔ test translate
 
+  test LengthVisitor
+    ✔ test accept
+    ✔ test accept
+    ✔ test accept
+    ✔ test accept
+    ✔ test accept
+    ✔ test accept
+
   test LineString
     ✔ test default constructor
     ✔ test constructor with points
@@ -40,19 +53,12 @@
     ✔ test getEnvelope
 
   test LogGeometryVisitor
-Je suis un point vide.
-Je suis un point vide.
-Je suis un point avec x=3 et y=4.
-Je suis un point avec x=3 et y=4.
-Je suis une polyligne vide.
-Je suis une polyligne vide.
-Je suis une polyligne définie par 2 point(s).
-Je suis une polyligne définie par 2 point(s).
-Je suis une collection de géométrie vide.
-Je suis une collection de géométrie vide.
-Je suis une collection de géométrie définie par 2 géométrie(s).
-Je suis une collection de géométrie définie par 2 géométrie(s).
-    ✔ test accept
+    ✔ test accept Point
+    ✔ test accept Point
+    ✔ test accept LineString
+    ✔ test accept LineString
+    ✔ test accept GeometryCollection
+    ✔ test accept GeometryCollection
 
   test Point
     ✔ test default constructor
@@ -65,24 +71,35 @@ Je suis une collection de géométrie définie par 2 géométrie(s).
 
   test WktVisitor
     ✔ test accept
+    ✔ test accept
+    ✔ test accept
+    ✔ test accept
+    ✔ test accept
+    ✔ test accept
 
   test WktWriter
     ✔ test write
+    ✔ test write
+    ✔ test write
+    ✔ test write
+    ✔ test write
+    ✔ test write
 
 
-  33 passing (22ms)
+  59 passing (24ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------------|---------|----------|---------|---------|-------------------
-All files                      |   99.45 |    93.28 |     100 |   99.42 |                   
+All files                      |    99.5 |    92.41 |     100 |   99.47 |                   
  AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
  Envelope.ts                   |     100 |    92.85 |     100 |     100 | 1                 
  EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
- GeometryCollection.ts         |     100 |     87.5 |     100 |     100 | 23-27             
+ GeometryCollection.ts         |     100 |     87.5 |     100 |     100 | 22-26             
  GeometryWithCachedEnvelope.ts |     100 |    85.71 |     100 |     100 | 1                 
+ LengthVisitor.ts              |     100 |       90 |     100 |     100 | 1                 
  LineString.ts                 |     100 |     87.5 |     100 |     100 | 22-26             
- LogGeometryVisitor.ts         |     100 |    91.66 |     100 |     100 | 1                 
+ LogGeometryVisitor.ts         |     100 |    84.61 |     100 |     100 | 1-8               
  Point.ts                      |     100 |      100 |     100 |     100 |                   
  WktVisitor.ts                 |     100 |    91.66 |     100 |     100 | 1                 
  WktWriter.ts                  |   96.66 |    94.44 |     100 |   96.42 | 42                

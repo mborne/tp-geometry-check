@@ -36,9 +36,7 @@
     ✔ test méthode build avec absence d'insertion
 
   test WktWriter
-POINT(3 4)
     ✔ test avec un point
-LINESTRING(3 4 5 8)
     ✔ test avec une linestring
 
   test LogGeometry
@@ -48,37 +46,44 @@ Je suis une polyligne définie par 2 points.
     ✔ test visitorLinestring
 
   test WktVisitor
-POINT(3 4)
     ✔ test getResult
+    ✔ test visitLinestring with empty linestring
+    ✔ test visitLinestring with non-empty linestring
+    ✔ test visitGeometryCollection with empty collection
+    ✔ test visitGeometryCollection with non-empty collection
 
-  test WktVisitor
-POINT(3 4)
-    ✔ test avec point
-
-  test getEnvelope
-    ✔ test avec point
-    ✔ test avec linestring
-
-  test GeometryWithCachedEnvelope
-GeometryWithCachedEnvelope { original: Point { coordinate: [ 3, 4 ] } }
-Envelope { topRight: [ 3, 4 ], bottomLeft: [ 3, 4 ] }
-Envelope { topRight: [ 3, 4 ], bottomLeft: [ 3, 4 ] }
+  GeometryWithCachedEnvelope
+    ✔ test asText
     ✔ test getEnvelope
+    ✔ test getType
+    ✔ test isEmpty
+    ✔ test translate
+
+  test GeometryCollection
+    ✔ test default constructor
+    ✔ test constructor with geometries
+    ✔ test getGeometryN
+    ✔ test clone
+    ✔ test getType
+    ✔ test isEmpty empty
+    ✔ test isEmpty non empty
+    ✔ test translate
 
 
-  32 passing (22ms)
+  45 passing (25ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------------|---------|----------|---------|---------|-------------------
-All files                      |   85.96 |    88.54 |   89.47 |   86.36 |                   
+All files                      |    90.6 |    86.84 |   93.05 |   90.84 |                   
  AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
  Envelope.ts                   |     100 |       95 |     100 |     100 | 1                 
- EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
- GeometryWithCachedEnvelope.ts |   41.66 |       75 |    37.5 |   41.66 | 12-16,23-37       
+ EnvelopeBuilder.ts            |   81.25 |      100 |   85.71 |   85.71 | 40-41             
+ GeometryCollection.ts         |   93.75 |       90 |    90.9 |   93.33 | 22                
+ GeometryWithCachedEnvelope.ts |   76.92 |       75 |   77.77 |   76.92 | 17,24,43          
  Linestring.ts                 |     100 |       90 |     100 |     100 | 15                
- LogGeometryVisitor.ts         |      75 |       70 |     100 |      75 | 8,17              
+ LogGeometryVisitor.ts         |   54.54 |    58.33 |      75 |   54.54 | 9,18,25-28        
  Point.ts                      |     100 |    83.33 |     100 |     100 | 23-27             
- WktVisitor.ts                 |      40 |    83.33 |      80 |   44.44 | 16-21             
+ WktVisitor.ts                 |   95.45 |    83.33 |     100 |      95 | 31                
  WktWriter.ts                  |   92.85 |       90 |     100 |    92.3 | 17                
 -------------------------------|---------|----------|---------|---------|-------------------

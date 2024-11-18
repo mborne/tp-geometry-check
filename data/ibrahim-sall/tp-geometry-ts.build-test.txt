@@ -15,6 +15,27 @@
     ✔ test insert
     ✔ test build
     ✔ test build modified
+    ✔ test visitPoint
+    ✔ test visitLineString
+    ✔ test visitGeometryCollection
+
+  Test GeometryCollection
+    ✔ should return the correct number of geometries
+    ✔ should return the correct geometry at index
+    ✔ should return undefined for out of bounds index
+    ✔ should return the correct type
+    ✔ should return true if empty
+    ✔ should return false if not empty
+    ✔ should translate all geometries
+    ✔ should clone all geometries
+
+  GeometryWithCachedEnvelope for points
+    ✔ should cache the envelope calculation
+    ✔ should invalidate the cache on translate
+
+  test GeometryWithCachedEnvelope for lineString
+    ✔ should cache the envelope calculation
+    ✔ should invalidate the cache on translate
 
   test LineString
     ✔ test default constructor
@@ -48,24 +69,42 @@ Je suis une polyligne vide.
   test WktVisitor
     ✔ test visitPoint
     ✔ test visitLineString
+    1) Test visitGeometryCollection
 
   test WktWriter
     ✔ test write Point
     ✔ test write LineString
 
 
-  31 passing (25ms)
+  46 passing (23ms)
+  1 failing
 
------------------------|---------|----------|---------|---------|-------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------|---------|----------|---------|---------|-------------------
-All files              |      98 |    91.86 |     100 |   97.89 |                   
- AbstractGeometry.ts   |     100 |      100 |     100 |     100 |                   
- Envelope.ts           |     100 |    91.66 |     100 |     100 | 1                 
- EnvelopeBuilder.ts    |     100 |      100 |     100 |     100 |                   
- LineString.ts         |     100 |    84.61 |     100 |     100 | 16-20             
- LogGeometryVisitor.ts |    87.5 |    83.33 |     100 |    87.5 | 9                 
- Point.ts              |     100 |      100 |     100 |     100 |                   
- WktVisitor.ts         |     100 |    85.71 |     100 |     100 | 1                 
- WktWriter.ts          |   93.75 |     90.9 |     100 |   93.33 | 21                
------------------------|---------|----------|---------|---------|-------------------
+  1) test WktVisitor
+       Test visitGeometryCollection:
+
+      AssertionError: expected 'POINT(1.0 2.0)POINT(3.0 4.0)LINESTRIN…' to equal 'GEOMETRYCOLLECTION(POINT(1.0 2.0),POI…'
+      + expected - actual
+
+      -POINT(1.0 2.0)POINT(3.0 4.0)LINESTRING(1.0 2.0,3.0 4.0)
+      +GEOMETRYCOLLECTION(POINT(1.0 2.0),POINT(3.0 4.0),LINESTRING(1.0 2.0,3.0 4.0))
+      
+      at Context.<anonymous> (test/WktVisitor.spec.ts:2:1932)
+      at process.processImmediate (node:internal/timers:478:21)
+
+
+
+-------------------------------|---------|----------|---------|---------|-------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------------------|---------|----------|---------|---------|-------------------
+All files                      |   85.46 |    88.69 |   88.05 |   85.18 |                   
+ AbstractGeometry.ts           |      70 |      100 |   66.66 |      70 | 20-22             
+ Envelope.ts                   |     100 |    91.66 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
+ GeometryCollection.ts         |     100 |    86.66 |     100 |     100 | 14-17             
+ GeometryWithCachedEnvelope.ts |   68.75 |      100 |   44.44 |   68.75 | 16-20,29-37       
+ LineString.ts                 |     100 |    84.61 |     100 |     100 | 16-20             
+ LogGeometryVisitor.ts         |   63.63 |    71.42 |      75 |   63.63 | 10,24-28          
+ Point.ts                      |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts                 |      52 |    66.66 |   83.33 |   52.17 | 29-42             
+ WktWriter.ts                  |   93.75 |     90.9 |     100 |   93.33 | 21                
+-------------------------------|---------|----------|---------|---------|-------------------

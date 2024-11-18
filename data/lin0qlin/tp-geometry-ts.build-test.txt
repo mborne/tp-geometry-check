@@ -41,7 +41,7 @@
     ✔ test linestring
 
 
-  24 passing (20ms)
+  24 passing (17ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

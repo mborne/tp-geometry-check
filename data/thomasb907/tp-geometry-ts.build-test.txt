@@ -12,6 +12,9 @@ xmin : 0 xmax : 2 ymin : 0 ymax : 3
 
     ✔ test default constructor
 
+  test  GeometryCollection
+    ✔ test  GeometryCollection
+
   test  GeometryWithCache
     ✔ test  GeometryWithCache
 
@@ -29,19 +32,20 @@ Je suis une polyligne définie par 2 point(s).
     ✔ test  WktWriter
 
 
-  8 passing (16ms)
+  9 passing (21ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------------|---------|----------|---------|---------|-------------------
-All files                      |   85.18 |    81.48 |   89.47 |   84.84 |                   
+All files                      |   82.84 |    83.05 |   85.29 |   82.71 |                   
  AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
  Envelope.ts                   |     100 |    63.63 |     100 |     100 | 1,18-30           
- EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
+ EnvelopeBuilder.ts            |   85.71 |      100 |   85.71 |   89.47 | 44-45             
+ GeometryCollection.ts         |   57.89 |      100 |   66.66 |   55.55 | 22,28-38          
  GeometryWithCachedEnvelope.ts |      50 |    85.71 |    37.5 |      50 | 13-24,33          
  LineString.ts                 |     100 |      100 |     100 |     100 |                   
- LogGeometryVisitor.ts         |      75 |       70 |     100 |      75 | 12,19             
+ LogGeometryVisitor.ts         |   54.54 |    58.33 |      80 |   54.54 | 12-15,20,27       
  Point.ts                      |     100 |      100 |     100 |     100 |                   
- WktVisitor.ts                 |   53.33 |    58.33 |   83.33 |   53.33 | 13,20,26-32       
+ WktVisitor.ts                 |   91.66 |       75 |     100 |    90.9 | 13,20             
  WktWriter.ts                  |      80 |    78.57 |     100 |   78.94 | 14,22,35-37       
 -------------------------------|---------|----------|---------|---------|-------------------
