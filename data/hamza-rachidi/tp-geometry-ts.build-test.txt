@@ -63,7 +63,7 @@
     ✔ test sur cette classe
 
 
-  36 passing (25ms)
+  36 passing (15ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

@@ -55,7 +55,7 @@
     ✔ test WTK pour un mauvais type de geometry
 
 
-  36 passing (25ms)
+  36 passing (14ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

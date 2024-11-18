@@ -135,7 +135,7 @@
       ✔ should throw an error if geometry type is not supported
 
 
-  70 passing (28ms)
+  70 passing (25ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

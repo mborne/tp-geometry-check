@@ -2,8 +2,3 @@
 > tp-geometry-ts@0.1.0 build
 > tsc
 
-src/GeometryWithCachedEnvelope.ts(38,5): error TS2416: Property 'accept' in type 'GeometryWithCachedEnvelope' is not assignable to the same property in base type 'Geometry'.
-  Type '(visitor: any) => void' is not assignable to type '<T>(visitor: GeometryVisitor<T>) => T'.
-    Type 'void' is not assignable to type 'T'.
-      'T' could be instantiated with an arbitrary type which could be unrelated to 'void'.
-src/GeometryWithCachedEnvelope.ts(38,21): error TS2314: Generic type 'GeometryVisitor<T>' requires 1 type argument(s).

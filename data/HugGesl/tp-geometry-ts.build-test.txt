@@ -70,7 +70,7 @@ Je suis une polyligne définie par 2 points.
     ✔ test translate
 
 
-  45 passing (25ms)
+  45 passing (16ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

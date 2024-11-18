@@ -27,6 +27,9 @@ for (const [username, repositoryUrl] of Object.entries(repositories)) {
     if ( ! fs.existsSync(repositoryDir) ){
         let commandClone = `git clone ${repositoryUrl} ${repositoryDir}`;
         shell.exec(commandClone, { silent: true });
+    }else{
+        let commandPull = `cd ${repositoryDir} && git pull`;
+        shell.exec(commandPull, { silent: false });
     }
 
     // on se place dans le dossier du dépôt

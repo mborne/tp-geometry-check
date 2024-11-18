@@ -32,7 +32,7 @@ Je suis une polyligne définie par 2 point(s).
     ✔ test  WktWriter
 
 
-  9 passing (21ms)
+  9 passing (10ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

@@ -76,7 +76,7 @@ Je suis une polyligne vide.
     ✔ test write LineString
 
 
-  46 passing (23ms)
+  46 passing (20ms)
   1 failing
 
   1) test WktVisitor
@@ -88,7 +88,7 @@ Je suis une polyligne vide.
       -POINT(1.0 2.0)POINT(3.0 4.0)LINESTRING(1.0 2.0,3.0 4.0)
       +GEOMETRYCOLLECTION(POINT(1.0 2.0),POINT(3.0 4.0),LINESTRING(1.0 2.0,3.0 4.0))
       
-      at Context.<anonymous> (test/WktVisitor.spec.ts:2:1932)
+      at Context.<anonymous> (test/WktVisitor.spec.ts:28:43)
       at process.processImmediate (node:internal/timers:478:21)
 
 

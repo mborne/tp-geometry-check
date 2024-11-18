@@ -56,7 +56,7 @@
     ✔ test with geometry error
 
 
-  37 passing (24ms)
+  37 passing (14ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

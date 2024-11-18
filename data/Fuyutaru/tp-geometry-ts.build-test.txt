@@ -67,7 +67,7 @@
     ✔ test error
 
 
-  46 passing (26ms)
+  46 passing (19ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

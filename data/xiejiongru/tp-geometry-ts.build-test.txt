@@ -28,7 +28,7 @@ LineString: [object Object],[object Object]
     5) test write
 
 
-  5 passing (16ms)
+  5 passing (13ms)
   5 failing
 
   1) test Enveloppe
@@ -40,7 +40,7 @@ LineString: [object Object],[object Object]
       -Envelope: 0,0 5,5
       +bottomLeft : 0 0 | topRight : 5 5
       
-      at Context.<anonymous> (test/EnvelopeBuilder.spec.ts:2:1494)
+      at Context.<anonymous> (test/EnvelopeBuilder.spec.ts:26:36)
       at process.processImmediate (node:internal/timers:478:21)
 
   2) test LineString
@@ -52,13 +52,13 @@ LineString: [object Object],[object Object]
       -Envelope: 3,4 7,9
       +[3,4]
       
-      at Context.<anonymous> (test/LineString.spec.ts:2:2287)
+      at Context.<anonymous> (test/LineString.spec.ts:53:44)
       at process.processImmediate (node:internal/timers:478:21)
 
   3) test LogGeometryVisitor
        test LogGeometryVisitor:
      TypeError: visitor.getResult is not a function
-      at Context.<anonymous> (test/LogGeometryVisitor.spec.ts:2:1365)
+      at Context.<anonymous> (test/LogGeometryVisitor.spec.ts:17:24)
       at process.processImmediate (node:internal/timers:478:21)
 
   4) test Point
@@ -73,7 +73,7 @@ LineString: [object Object],[object Object]
       -]
       +[]
       
-      at Context.<anonymous> (test/Point.spec.ts:2:1010)
+      at Context.<anonymous> (test/Point.spec.ts:19:43)
       at process.processImmediate (node:internal/timers:478:21)
 
   5) test WktWriter
@@ -85,7 +85,7 @@ LineString: [object Object],[object Object]
       -POINT (NaN NaN)
       +POINT IS EMPTY
       
-      at Context.<anonymous> (test/WktWriter.spec.ts:2:1259)
+      at Context.<anonymous> (test/WktWriter.spec.ts:15:36)
       at process.processImmediate (node:internal/timers:478:21)
 
 

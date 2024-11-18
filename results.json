@@ -113,11 +113,11 @@
     "username": "coincoin42",
     "repositoryUrl": "https://github.com/coincoin42/tp-geometry-ts",
     "branchName": "main",
-    "commitId": "469e6c1e90bfb6abed85374bb63abefdc78c68ef",
+    "commitId": "36809f98abb8df619828bdd3b0092daa755789c0",
     "install": true,
     "build": false,
     "test": true,
-    "coverage": 95.7
+    "coverage": 100
   },
   {
     "username": "HugGesl",
@@ -153,9 +153,9 @@
     "username": "LBilheran",
     "repositoryUrl": "https://github.com/LBilheran/tp-geometry-ts",
     "branchName": "main",
-    "commitId": "e18bc6c0d5c3a2c1ceb61e80cb510928a5c312e5",
+    "commitId": "4a19e04c0b7ef14402b29021d17015e1a5a8a81f",
     "install": true,
-    "build": false,
+    "build": true,
     "test": true,
     "coverage": 99.47
   }

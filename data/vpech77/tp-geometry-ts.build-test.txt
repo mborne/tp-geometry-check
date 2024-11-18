@@ -56,7 +56,7 @@
     ✔ test write
 
 
-  33 passing (25ms)
+  33 passing (16ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
