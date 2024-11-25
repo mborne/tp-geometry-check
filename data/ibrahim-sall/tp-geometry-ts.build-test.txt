@@ -69,42 +69,27 @@ Je suis une polyligne vide.
   test WktVisitor
     ✔ test visitPoint
     ✔ test visitLineString
-    1) Test visitGeometryCollection
+    ✔ Test visitGeometryCollection
 
   test WktWriter
     ✔ test write Point
     ✔ test write LineString
 
 
-  46 passing (20ms)
-  1 failing
-
-  1) test WktVisitor
-       Test visitGeometryCollection:
-
-      AssertionError: expected 'POINT(1.0 2.0)POINT(3.0 4.0)LINESTRIN…' to equal 'GEOMETRYCOLLECTION(POINT(1.0 2.0),POI…'
-      + expected - actual
-
-      -POINT(1.0 2.0)POINT(3.0 4.0)LINESTRING(1.0 2.0,3.0 4.0)
-      +GEOMETRYCOLLECTION(POINT(1.0 2.0),POINT(3.0 4.0),LINESTRING(1.0 2.0,3.0 4.0))
-      
-      at Context.<anonymous> (test/WktVisitor.spec.ts:28:43)
-      at process.processImmediate (node:internal/timers:478:21)
-
-
+  47 passing (24ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------------|---------|----------|---------|---------|-------------------
-All files                      |   85.46 |    88.69 |   88.05 |   85.18 |                   
+All files                      |   92.12 |    90.26 |   89.55 |   91.61 |                   
  AbstractGeometry.ts           |      70 |      100 |   66.66 |      70 | 20-22             
  Envelope.ts                   |     100 |    91.66 |     100 |     100 | 1                 
  EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
- GeometryCollection.ts         |     100 |    86.66 |     100 |     100 | 14-17             
+ GeometryCollection.ts         |     100 |    85.71 |     100 |     100 | 14-17             
  GeometryWithCachedEnvelope.ts |   68.75 |      100 |   44.44 |   68.75 | 16-20,29-37       
  LineString.ts                 |     100 |    84.61 |     100 |     100 | 16-20             
  LogGeometryVisitor.ts         |   63.63 |    71.42 |      75 |   63.63 | 10,24-28          
  Point.ts                      |     100 |      100 |     100 |     100 |                   
- WktVisitor.ts                 |      52 |    66.66 |   83.33 |   52.17 | 29-42             
+ WktVisitor.ts                 |     100 |     87.5 |     100 |     100 | 1                 
  WktWriter.ts                  |   93.75 |     90.9 |     100 |   93.33 | 21                
 -------------------------------|---------|----------|---------|---------|-------------------

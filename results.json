@@ -53,21 +53,21 @@
     "username": "xiejiongru",
     "repositoryUrl": "https://github.com/xiejiongru/tp-geometry-ts",
     "branchName": "main",
-    "commitId": "f1bde18f4a4c8780fae995e96036425193c83dcb",
+    "commitId": "5165de45ab999bef6086c88aa1c0e486dd241ddc",
     "install": true,
     "build": true,
-    "test": false,
-    "coverage": 85.18
+    "test": true,
+    "coverage": 91.5
   },
   {
     "username": "ibrahim-sall",
     "repositoryUrl": "https://github.com/ibrahim-sall/tp-geometry-ts",
     "branchName": "main",
-    "commitId": "645b419787d835b0569a0337403822693eef8c05",
+    "commitId": "e5a971414b5737a576ae58f68f700a1c260a5e82",
     "install": true,
     "build": true,
-    "test": false,
-    "coverage": 85.18
+    "test": true,
+    "coverage": 91.61
   },
   {
     "username": "wulaurent",

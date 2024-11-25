@@ -5,99 +5,43 @@
 
 
   test Enveloppe
-    1) test default constructor
+    ✔ test default constructor
     ✔ test builder
 
   test LineString
     ✔ test default constructor
     ✔ test constructor with points
     ✔ test out-of-bounds getPointN
-    2) test getEnvelope
+    ✔ test getEnvelope
 
   test LogGeometryVisitor
-Empty Point
-Empty LineString
-LineString: [object Object],[object Object]
-    3) test LogGeometryVisitor
+    ✔ test LogGeometryVisitor
 
   test Point
-    4) test default constructor
+Truc :
+    ✔ test default constructor
     ✔ test constructor with coordinates
 
-  test WktWriter
-    5) test write
+  test WktVisitor
+    ✔ test write
+
+  WktWriter
+    ✔ should throw error on unsupported geometry type
+    ✔ should return WKT for Point
+    ✔ should return WKT for LineString
 
 
-  5 passing (13ms)
-  5 failing
-
-  1) test Enveloppe
-       test default constructor:
-
-      AssertionError: expected 'Envelope: 0,0 5,5' to equal 'bottomLeft : 0 0 | topRight : 5 5'
-      + expected - actual
-
-      -Envelope: 0,0 5,5
-      +bottomLeft : 0 0 | topRight : 5 5
-      
-      at Context.<anonymous> (test/EnvelopeBuilder.spec.ts:26:36)
-      at process.processImmediate (node:internal/timers:478:21)
-
-  2) test LineString
-       test getEnvelope:
-
-      AssertionError: expected 'Envelope: 3,4 7,9' to equal '[3,4]'
-      + expected - actual
-
-      -Envelope: 3,4 7,9
-      +[3,4]
-      
-      at Context.<anonymous> (test/LineString.spec.ts:53:44)
-      at process.processImmediate (node:internal/timers:478:21)
-
-  3) test LogGeometryVisitor
-       test LogGeometryVisitor:
-     TypeError: visitor.getResult is not a function
-      at Context.<anonymous> (test/LogGeometryVisitor.spec.ts:17:24)
-      at process.processImmediate (node:internal/timers:478:21)
-
-  4) test Point
-       test default constructor:
-
-      AssertionError: expected [ NaN, NaN ] to deeply equal []
-      + expected - actual
-
-      -[
-      -  NaN
-      -  NaN
-      -]
-      +[]
-      
-      at Context.<anonymous> (test/Point.spec.ts:19:43)
-      at process.processImmediate (node:internal/timers:478:21)
-
-  5) test WktWriter
-       test write:
-
-      AssertionError: expected 'POINT (NaN NaN)' to equal 'POINT IS EMPTY'
-      + expected - actual
-
-      -POINT (NaN NaN)
-      +POINT IS EMPTY
-      
-      at Context.<anonymous> (test/WktWriter.spec.ts:15:36)
-      at process.processImmediate (node:internal/timers:478:21)
-
-
+  13 passing (18ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |   85.54 |       85 |   95.23 |   85.18 |                   
+All files              |   91.89 |    88.88 |   95.91 |    91.5 |                   
  Envelope.ts           |     100 |    91.66 |     100 |     100 | 1                 
  EnvelopeBuilder.ts    |     100 |      100 |     100 |     100 |                   
- LineString.ts         |     100 |    93.33 |     100 |     100 | 25                
- LogGeometryVisitor.ts |    87.5 |       70 |     100 |    87.5 | 10                
- Point.ts              |   83.33 |     87.5 |    90.9 |   83.33 | 55-57             
- WktWriter.ts          |   46.66 |    61.53 |   66.66 |   46.66 | 9,15-25           
+ LineString.ts         |     100 |    93.33 |     100 |     100 | 27                
+ LogGeometryVisitor.ts |    87.5 |    72.72 |     100 |   86.66 | 9,17              
+ Point.ts              |   83.33 |      100 |    90.9 |   83.33 | 55-57             
+ WktVisitor.ts         |   93.75 |       90 |      80 |   93.33 | 35                
+ WktWriter.ts          |      85 |       60 |     100 |   84.21 | 8,20,28           
 -----------------------|---------|----------|---------|---------|-------------------

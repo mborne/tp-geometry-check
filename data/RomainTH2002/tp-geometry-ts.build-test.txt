@@ -60,7 +60,7 @@ LINESTRING(3 4, 7 2)
     ✔ texte ligne
 
 
-  24 passing (13ms)
+  24 passing (17ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
