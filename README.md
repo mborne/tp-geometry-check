@@ -6,12 +6,12 @@ Correction du TP-PATTERN-GEOMETRY et retours sur les problèmes récurrents.
 
 Classique de la précédente session.
 
-### G.1 - La convention de nommage java doit être respectée
+### G.1 - La convention de nommage doit être respectée
 
 Par exemple, la première lettre d'une variable doit être en minuscule :
 
-```java
-    public void insert(Coordinate coordinate){
+```ts
+    insert(coordinate: Coordinate){
         this.Xvalue.add(coordinate.getX());
         this.Yvalue.add(coordinate.getY());
     }
@@ -19,8 +19,8 @@ Par exemple, la première lettre d'une variable doit être en minuscule :
 
 ### G.2 - On nomme avec un pluriel une variable correspondant à un collection
 
-```java
-    public void insert(Coordinate coordinate){
+```ts
+    insert(coordinate: Coordinate){
         this.Xvalue.add(coordinate.getX());
         this.Yvalue.add(coordinate.getY());
     }
@@ -28,8 +28,8 @@ Par exemple, la première lettre d'une variable doit être en minuscule :
 
 ->
 
-```java
-    public void insert(Coordinate coordinate){
+```ts
+    insert(coordinate: Coordinate ){
         this.xValues.add(coordinate.getX());
         this.yValues.add(coordinate.getY());
     }
@@ -39,21 +39,23 @@ Par exemple, la première lettre d'une variable doit être en minuscule :
 ### G.3 - On évite les abréviations
 
 
-```java
-	public LineString(List<Point> p) {
+```ts
+class LineString {
+	constructor(p: Point[]) {
 		this.points=p;
 	}
+}
 ```
 
 ->
 
-```java
-	public LineString(List<Point> points) {
+```ts
+class LineString {
+	constructor(points: Point[]) {
 		this.points=points;
 	}
+}
 ```
-
-
 
 
 ### G.4 - Le code doit être mis en forme
@@ -69,7 +71,7 @@ NB : Les IDE disposent d'outils qui permettent de mettre en forme automatiquemen
 Les lignes TODO de ce style ne doivent pas être conservée lorsque l'on implémente les méthodes :
 
 ```java
-public boolean isEmpty() {
+isEmpty(): boolean {
     // TODO Auto-generated method stub
     return bottomLeft.isEmpty() || TopRight.isEmpty();
 }
@@ -90,88 +92,33 @@ On ne conserve pas des codes en commentaires de ce type :
 
 ### G.7 - On n'expose pas publiquement des données pour tester plus facilement
 
-Par exemple, `getXValues()` et `getYValues()` ci-dessous :
-
-```java
-class EnvelopeBuilder {    
-    private List<Double> xVals;
-    private List<Double> yVals;
-
-    public EnvelopeBuilder() {
-        this.xVals = new ArrayList<Double>();
-        this.yVals = new ArrayList<Double>();
-    }
-    
-    public List<Double> getXValues() {
-        return this.xVals;
-    }
-
-    public List<Double> getYValues() {
-        return this.yVals;
-    }
-}
-```
+Par exemple, pas de `getXValues()` et `getYValues()` sur `EnvelopeBuilder`.
 
 
 ### G.8 - On renvoie directement le résultat d'une opération booléenne
 
-```java
-    public Boolean isEmpty(){
+```ts
+class Envelope {
+    isEmpty(): boolean {
         if (bottomLeft.isEmpty() || topRight.isEmpty()){
             return true;
         }
         else return false;
     }
+}
 ```
 
 ->
 
 
-```java
-    public Boolean isEmpty(){
+```ts
+class Envelope {
+    isEmpty(): boolean {
         return bottomLeft.isEmpty() || topRight.isEmpty();
-    }
-```
-
-
-### G.9 - Ne pas faire des appels inutiles au constructeur parent
-
-```java	
-	public Coordinate() {
-		super();
-		this.x = Double.NaN;
-		this.y = Double.NaN;
-	}
-```
-
-->
-
-```java	
-	public Coordinate() {
-		this.x = Double.NaN;
-		this.y = Double.NaN;
-	}
-```
-
-## G.10 - On utilise isEmpty pour tester si une collection est vide
-
-```java
-    @Override
-    public Boolean isEmpty(){
-        return getNumPoints()==0;
-    }
-```
-
-=>
-
-
-```java
-class LineString {
-    public Boolean isEmpty(){
-        return this.points.isEmpty();
     }
 }
 ```
+
 
 
 ## Algorithmie

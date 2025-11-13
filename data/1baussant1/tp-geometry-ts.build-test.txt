@@ -4,29 +4,38 @@
 
 
 
-  test LineString
-    ✔ test default constructor
-    ✔ test constructor with points
-    ✔ test should translate points
-    ✔ should not modify empty point
-    ✔ should create a similar instance
-    ✔ copy should be independant
+  test EnvelopeBuilder
+    ✔ should calculate a simple bbox
+    ✔ should deal with a single point
+    ✔ should deal with absence of points
+    ✔ should ignore incorrect coordinates
 
-  test Point
+  Test Point
     ✔ test default constructor
     ✔ test constructor with coordinates
-    ✔ test should translate points
-    ✔ should not modify empty point
-    ✔ should create a similar instance
-    ✔ copy should be independant
+    ✔ translate() should move point correctly
+    ✔ translate() should not modify empty point
+    ✔ clone() should create a similar but independent instance
+    ✔ getEnvelope() should return a valid envelope
+    ✔ getEnvelope() of an empty point should return an empty envelope
+
+  Test Point
+    ✔ test default constructor
+    ✔ test constructor with coordinates
+    ✔ translate() should move point correctly
+    ✔ translate() should not modify empty point
+    ✔ clone() should create a similar but independent instance
+    ✔ getEnvelope() should return a valid envelope
+    ✔ getEnvelope() of an empty point should return an empty envelope
 
 
-  12 passing (9ms)
+  18 passing (8ms)
 
----------------|---------|----------|---------|---------|-------------------
-File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------|---------|----------|---------|---------|-------------------
-All files      |   79.16 |    90.47 |   78.94 |   86.36 |                   
- LineString.ts |   58.33 |     87.5 |      60 |      70 | 28-33             
- Point.ts      |     100 |     92.3 |     100 |     100 | 1                 
----------------|---------|----------|---------|---------|-------------------
+--------------------|---------|----------|---------|---------|-------------------
+File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------|---------|----------|---------|---------|-------------------
+All files           |   94.11 |    92.85 |   96.29 |   97.82 |                   
+ Envelope.ts        |   83.33 |    81.25 |   91.66 |   93.33 | 55                
+ EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
+ Point.ts           |     100 |      100 |     100 |     100 |                   
+--------------------|---------|----------|---------|---------|-------------------

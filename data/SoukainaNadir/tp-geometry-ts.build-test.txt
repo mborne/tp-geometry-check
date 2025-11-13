@@ -14,16 +14,6 @@
     ✔ test build with no coordinates
     ✔ test all min/max branches
 
-  test GeometryVisitor
-Je suis un point vide.
-    ✔ test visit empty point
-Je suis un point avec x=2 et y=3.
-    ✔ test visit point with coordinates
-Je suis une polyligne vide.
-    ✔ test visit empty linestring
-Je suis une polyligne définie par 3 point(s).
-    ✔ test visit linestring with points
-
   test LineString
     ✔ test default constructor
     ✔ test constructor with points
@@ -39,6 +29,13 @@ Je suis une polyligne définie par 3 point(s).
     ✔ test clone linestring with points
     ✔ test getEnvelope
 
+  test LogGeometryVisitor
+    ✔ test visit empty point
+    ✔ test visit point with coordinates
+    ✔ test visit empty linestring
+    ✔ test visit linestring with points
+    ✔ test multiple visits
+
   test Point
     ✔ test default constructor
     ✔ test constructor with coordinates
@@ -50,6 +47,12 @@ Je suis une polyligne définie par 3 point(s).
     ✔ test clone point with coordinates
     ✔ test getEnvelope
 
+  test WktVisitor
+    ✔ test visit empty point
+    ✔ test visit point with coordinates
+    ✔ test visit empty lineString
+    ✔ test visit lineString with coordinates
+
   test WktWriter
     ✔ test write empty point
     ✔ test write point with coordinates
@@ -58,16 +61,17 @@ Je suis une polyligne définie par 3 point(s).
     ✔ test write unsupported geometry type
 
 
-  37 passing (12ms)
+  42 passing (20ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |     100 |    97.05 |     100 |     100 |                   
+All files              |     100 |    94.93 |     100 |     100 |                   
  Envelope.ts           |     100 |     87.5 |     100 |     100 | 1                 
  EnvelopeBuilder.ts    |     100 |      100 |     100 |     100 |                   
  LineString.ts         |     100 |      100 |     100 |     100 |                   
- LogGeometryVisitor.ts |     100 |       90 |     100 |     100 | 1                 
+ LogGeometryVisitor.ts |     100 |    81.81 |     100 |     100 | 1-6               
  Point.ts              |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts         |     100 |       90 |     100 |     100 | 1                 
  WktWriter.ts          |     100 |      100 |     100 |     100 |                   
 -----------------------|---------|----------|---------|---------|-------------------

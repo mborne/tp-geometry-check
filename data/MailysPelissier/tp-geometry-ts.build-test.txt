@@ -12,21 +12,23 @@
     ✔ test default constructor
     ✔ test constructor with 2 Points
     ✔ translate linestring
+    ✔ envelope linestring
 
   test Point
     ✔ test default constructor
     ✔ test constructor with coordinates
     ✔ translate and clone point
+    ✔ envelope point
 
 
-  8 passing (6ms)
+  10 passing (7ms)
 
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
-All files           |     100 |    87.17 |     100 |     100 |                   
+All files           |     100 |     92.3 |     100 |     100 |                   
  Envelope.ts        |     100 |       70 |     100 |     100 | 1-10              
  EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
- LineString.ts      |     100 |     90.9 |     100 |     100 | 1                 
- Point.ts           |     100 |    91.66 |     100 |     100 | 1                 
+ LineString.ts      |     100 |      100 |     100 |     100 |                   
+ Point.ts           |     100 |      100 |     100 |     100 |                   
 --------------------|---------|----------|---------|---------|-------------------

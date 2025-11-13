@@ -4,6 +4,16 @@
 
 
 
+  test Envelope
+    ✔ test default constructor
+    ✔ test get minmax
+    ✔ test single coordinate
+
+  test Envelope Builder
+    ✔ test default build
+    ✔ test build with coordinates
+    ✔ test build with single coordinate
+
   test LineString
     ✔ test default constructor
     ✔ test constructor with coordinates
@@ -17,15 +27,18 @@
     ✔ test point translation
     ✔ test translation with empty point
     ✔ test cloning construct
+    ✔ test cloning empty point
     ✔ test cloning translation
 
 
-  11 passing (7ms)
+  18 passing (8ms)
 
----------------|---------|----------|---------|---------|-------------------
-File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------|---------|----------|---------|---------|-------------------
-All files      |     100 |    86.36 |     100 |     100 |                   
- LineString.ts |     100 |     87.5 |     100 |     100 | 1                 
- Point.ts      |     100 |    85.71 |     100 |     100 | 1,37              
----------------|---------|----------|---------|---------|-------------------
+--------------------|---------|----------|---------|---------|-------------------
+File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------|---------|----------|---------|---------|-------------------
+All files           |     100 |     92.1 |     100 |     100 |                   
+ Envelope.ts        |     100 |       90 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
+ LineString.ts      |     100 |     87.5 |     100 |     100 | 1                 
+ Point.ts           |     100 |    92.85 |     100 |     100 | 1                 
+--------------------|---------|----------|---------|---------|-------------------

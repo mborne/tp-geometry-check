@@ -4,6 +4,10 @@
 
 
 
+  test Envelope
+    ✔ test default constructor
+    ✔ test corners
+
   test LineString
     ✔ test default constructor
     ✔ test constructor with coordinates
@@ -23,12 +27,13 @@
     ✔ test clone point 
 
 
-  14 passing (6ms)
+  16 passing (7ms)
 
 ---------------|---------|----------|---------|---------|-------------------
 File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------|---------|----------|---------|---------|-------------------
-All files      |     100 |    93.33 |     100 |     100 |                   
+All files      |     100 |    91.66 |     100 |     100 |                   
+ Envelope.ts   |     100 |    88.88 |     100 |     100 | 1,22              
  LineString.ts |     100 |    93.33 |     100 |     100 | 1                 
  Point.ts      |     100 |    93.33 |     100 |     100 | 1                 
 ---------------|---------|----------|---------|---------|-------------------

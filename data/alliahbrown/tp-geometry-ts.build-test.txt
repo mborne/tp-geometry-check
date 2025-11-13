@@ -17,6 +17,12 @@
     ✔ test translate
     ✔ test enveloppe
 
+  test LogGeometryVisitor
+    ✔ test Points
+    ✔ test Linestring
+    ✔ test points vides
+    ✔ test Linestring vide
+
   test Point
     ✔ test default constructor
     ✔ test constructor with coordinates
@@ -30,15 +36,16 @@
     ✔ test write LineString
 
 
-  15 passing (10ms)
+  19 passing (10ms)
 
----------------------|---------|----------|---------|---------|-------------------
-File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------------|---------|----------|---------|---------|-------------------
-All files            |   98.55 |    97.05 |     100 |   98.55 |                   
- Enveloppe.ts        |     100 |    95.83 |     100 |     100 | 1                 
- EnveloppeBuilder.ts |     100 |      100 |     100 |     100 |                   
- Linestring.ts       |     100 |      100 |     100 |     100 |                   
- Point.ts            |     100 |      100 |     100 |     100 |                   
- WktWriter.ts        |   93.33 |    92.85 |     100 |   93.33 | 25                
----------------------|---------|----------|---------|---------|-------------------
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |   98.75 |    94.93 |     100 |   98.75 |                   
+ Enveloppe.ts          |     100 |    95.83 |     100 |     100 | 1                 
+ EnveloppeBuilder.ts   |     100 |      100 |     100 |     100 |                   
+ Linestring.ts         |     100 |      100 |     100 |     100 |                   
+ LogGeometryVisitor.ts |     100 |    81.81 |     100 |     100 | 1-7               
+ Point.ts              |     100 |      100 |     100 |     100 |                   
+ WktWriter.ts          |   93.33 |    92.85 |     100 |   93.33 | 25                
+-----------------------|---------|----------|---------|---------|-------------------

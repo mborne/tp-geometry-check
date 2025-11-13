@@ -4,6 +4,11 @@
 
 
 
+  test Envelope
+    ✔ EnvelopeBuilder create envelope
+    ✔ Envelope constructor
+    ✔ Envelope empty
+
   test LineString
     ✔ test default constructor
     ✔ test constructor with ONE point
@@ -17,17 +22,19 @@
     ✔ copy empty
     ✔ copy not empty
 
-  test Point
+  test Translate
     ✔ translate empty
     ✔ translate with value
 
 
-  11 passing (7ms)
+  14 passing (8ms)
 
----------------|---------|----------|---------|---------|-------------------
-File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------|---------|----------|---------|---------|-------------------
-All files      |     100 |     92.3 |     100 |     100 |                   
- LineString.ts |     100 |    91.66 |     100 |     100 | 1                 
- Point.ts      |     100 |    92.85 |     100 |     100 | 1                 
----------------|---------|----------|---------|---------|-------------------
+--------------------|---------|----------|---------|---------|-------------------
+File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------|---------|----------|---------|---------|-------------------
+All files           |     100 |    94.23 |     100 |     100 |                   
+ Envelope.ts        |     100 |    92.85 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
+ LineString.ts      |     100 |    91.66 |     100 |     100 | 1                 
+ Point.ts           |     100 |    92.85 |     100 |     100 | 1                 
+--------------------|---------|----------|---------|---------|-------------------

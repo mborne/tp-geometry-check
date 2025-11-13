@@ -4,18 +4,22 @@
 
 
 
+  ✔ test constructor with coordinates
+  ✔ test translate linestring
+  ✔ test clone
   test Point
     ✔ test default constructor
     ✔ test default LineString
     ✔ test constructor with coordinates
+    ✔ should translate point
 
 
-  3 passing (6ms)
+  7 passing (5ms)
 
 ---------------|---------|----------|---------|---------|-------------------
 File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------|---------|----------|---------|---------|-------------------
-All files      |    92.3 |    83.33 |    90.9 |    92.3 |                   
- LineString.ts |   83.33 |       75 |      80 |   83.33 | 19                
- Point.ts      |     100 |       90 |     100 |     100 | 1                 
+All files      |   80.76 |    85.71 |   94.11 |   80.76 |                   
+ LineString.ts |   69.23 |     87.5 |    87.5 |   69.23 | 32-36             
+ Point.ts      |    92.3 |    84.61 |     100 |    92.3 | 21                
 ---------------|---------|----------|---------|---------|-------------------

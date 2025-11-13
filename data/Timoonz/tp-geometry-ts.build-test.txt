@@ -18,7 +18,7 @@
     ✔ test copy point
 
 
-  9 passing (6ms)
+  9 passing (9ms)
 
 ---------------|---------|----------|---------|---------|-------------------
 File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

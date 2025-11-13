@@ -2,3 +2,5 @@
 > tp-geometry-ts@0.1.0 build
 > tsc
 
+src/WktVisitor.ts(5,22): error TS2420: Class 'WktVisitor' incorrectly implements interface 'GeometryVisitor'.
+  Type 'WktVisitor' is missing the following properties from type 'GeometryVisitor': visitPoint, visitLineString

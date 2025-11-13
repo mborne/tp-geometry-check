@@ -10,7 +10,7 @@
 
 <body>
     <div class="container-fluid">
-        <p>Mis à jour le 13/11 à 16h20</p>
+        <p>Mis à jour le 13/11 à 16h56</p>
         <table id="results" class="table table-striped" width="100%"></table>
     </div>
 
@@ -21,7 +21,7 @@
     <script type="text/javascript">
 
         function loadResults() {
-            $.getJSON('./results.json?_t=202511131620', function (results) {
+            $.getJSON('./results.json?_t=202511131656', function (results) {
                 let dataSet = results.map(function(result){
                     return [
                         `<a href="${result.repositoryUrl}" target="_blank">${result.username}</a>`,

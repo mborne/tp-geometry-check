@@ -17,7 +17,7 @@
     ✔ should clone point
 
 
-  8 passing (6ms)
+  8 passing (9ms)
 
 ---------------|---------|----------|---------|---------|-------------------
 File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
