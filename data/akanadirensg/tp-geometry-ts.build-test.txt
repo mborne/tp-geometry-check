@@ -1,0 +1,35 @@
+
+> tp-geometry-ts@0.1.0 coverage
+> nyc --reporter html --reporter text --reporter json-summary --report-dir coverage mocha
+
+
+
+  test Envelope
+    ✔ test envelope avec envelopeBuilder
+    ✔ test envelope vide avec EnvelopeBuilder
+    ✔ test envelope vide
+
+  test LineString
+    ✔ test default constructor
+    ✔ test constructor with coordinates
+    ✔ test translate linestring
+    ✔ test clone linestring
+
+  test Point
+    ✔ test default constructor
+    ✔ test constructor with coordinates
+    ✔ test translate point
+    ✔ test clone point
+
+
+  11 passing (7ms)
+
+--------------------|---------|----------|---------|---------|-------------------
+File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------|---------|----------|---------|---------|-------------------
+All files           |     100 |    95.77 |     100 |     100 |                   
+ Envelope.ts        |     100 |    95.45 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
+ LineString.ts      |     100 |    88.88 |     100 |     100 | 1                 
+ Point.ts           |     100 |    93.33 |     100 |     100 | 1                 
+--------------------|---------|----------|---------|---------|-------------------

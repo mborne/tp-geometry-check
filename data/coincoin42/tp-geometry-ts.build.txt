@@ -1,5 +1,0 @@
-
-> tp-geometry-ts@0.1.0 build
-> tsc
-
-src/LogGeometryVisitor.ts(7,52): error TS2314: Generic type 'GeometryVisitor<T>' requires 1 type argument(s).

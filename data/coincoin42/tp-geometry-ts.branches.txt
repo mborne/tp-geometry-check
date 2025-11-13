@@ -1,5 +1,0 @@
-* main
-  remotes/origin/HEAD -> origin/main
-  remotes/origin/coincoin
-  remotes/origin/dev
-  remotes/origin/main

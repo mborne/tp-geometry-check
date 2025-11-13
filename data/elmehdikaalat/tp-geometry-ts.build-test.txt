@@ -1,0 +1,60 @@
+
+> tp-geometry-ts@0.1.0 coverage
+> nyc --reporter html --reporter text --reporter json-summary --report-dir coverage mocha
+
+
+
+  test Envelope & EnvelopeBuilder
+    ✔ Envelope vide
+    ✔ EnvelopeBuilder vide : Envelope vide
+    ✔ EnvelopeBuilder avec un seul point
+    ✔ EnvelopeBuilder avec plusieurs points
+    ✔ Envelope.toString() format
+    ✔ EnvelopeBuilder ignore les coordonnées vides
+
+  test LineString
+    ✔ test default constructor
+    ✔ test constructor with points
+    ✔ test translate
+    ✔ test translate on empty LineString
+    ✔ clone of linestring
+    ✔ test getEnvelope on empty LineString
+    ✔ test getEnvelope on non-empty LineString
+
+  test LogGeometryVisitor
+    ✔ point vide
+    ✔ point non vide
+    ✔ linestring vide
+    ✔ linestring non vide
+
+  test Point
+    ✔ test default constructor 
+    ✔ test constructor with coordinates
+    ✔ test translate
+    ✔ test translate on empty point
+    ✔ clone of empty point
+    ✔ clone of non empty point
+    ✔ test getEnvelope on empty point
+    ✔ test getEnvelope on non-empty point
+
+  test WktWriter
+    ✔ POINT EMPTY
+    ✔ POINT(x y)
+    ✔ LINESTRING EMPTY
+    ✔ LINESTRING(x1 y1, x2 y2, ...)
+    ✔ should throw error for unsupported geometry type
+
+
+  30 passing (13ms)
+
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |     100 |     97.8 |     100 |     100 |                   
+ Envelope.ts           |     100 |    94.73 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts    |     100 |      100 |     100 |     100 |                   
+ LineString.ts         |     100 |      100 |     100 |     100 |                   
+ LogGeometryVisitor.ts |     100 |       90 |     100 |     100 | 1                 
+ Point.ts              |     100 |      100 |     100 |     100 |                   
+ WktWriter.ts          |     100 |      100 |     100 |     100 |                   
+-----------------------|---------|----------|---------|---------|-------------------

@@ -1,0 +1,73 @@
+
+> tp-geometry-ts@0.1.0 coverage
+> nyc --reporter html --reporter text --reporter json-summary --report-dir coverage mocha
+
+
+
+  test Envelope
+    ✔ test envelope creation and getters
+    ✔ test toString
+
+  test EnvelopeBuilder
+    ✔ test build envelope from coordinates
+    ✔ test build with one point
+    ✔ test build with no coordinates
+    ✔ test all min/max branches
+
+  test GeometryVisitor
+Je suis un point vide.
+    ✔ test visit empty point
+Je suis un point avec x=2 et y=3.
+    ✔ test visit point with coordinates
+Je suis une polyligne vide.
+    ✔ test visit empty linestring
+Je suis une polyligne définie par 3 point(s).
+    ✔ test visit linestring with points
+
+  test LineString
+    ✔ test default constructor
+    ✔ test constructor with points
+    ✔ test getType
+    ✔ test getPointN with negative index
+    ✔ test getPointN with index too large
+    ✔ test getPointN on empty linestring
+    ✔ test isEmpty with empty linestring
+    ✔ test isEmpty with linestring having points
+    ✔ test translate
+    ✔ test translate on empty linestring
+    ✔ test clone empty linestring
+    ✔ test clone linestring with points
+    ✔ test getEnvelope
+
+  test Point
+    ✔ test default constructor
+    ✔ test constructor with coordinates
+    ✔ test isEmpty with empty point
+    ✔ test isEmpty with point having coordinates
+    ✔ test translate
+    ✔ test translate on empty point
+    ✔ test clone empty point
+    ✔ test clone point with coordinates
+    ✔ test getEnvelope
+
+  test WktWriter
+    ✔ test write empty point
+    ✔ test write point with coordinates
+    ✔ test write empty linestring
+    ✔ test write linestring with points
+    ✔ test write unsupported geometry type
+
+
+  37 passing (12ms)
+
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |     100 |    97.05 |     100 |     100 |                   
+ Envelope.ts           |     100 |     87.5 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts    |     100 |      100 |     100 |     100 |                   
+ LineString.ts         |     100 |      100 |     100 |     100 |                   
+ LogGeometryVisitor.ts |     100 |       90 |     100 |     100 | 1                 
+ Point.ts              |     100 |      100 |     100 |     100 |                   
+ WktWriter.ts          |     100 |      100 |     100 |     100 |                   
+-----------------------|---------|----------|---------|---------|-------------------

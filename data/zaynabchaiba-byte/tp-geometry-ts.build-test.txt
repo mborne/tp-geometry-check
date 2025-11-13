@@ -1,0 +1,20 @@
+
+> tp-geometry-ts@0.1.0 coverage
+> nyc --reporter html --reporter text --reporter json-summary --report-dir coverage mocha
+
+
+
+  test Point
+    ✔ test default LineString
+    ✔ test constructor with coordinates
+
+
+  2 passing (7ms)
+
+---------------|---------|----------|---------|---------|-------------------
+File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+---------------|---------|----------|---------|---------|-------------------
+All files      |   85.71 |    72.22 |   83.33 |   85.71 |                   
+ LineString.ts |   71.42 |       75 |   66.66 |   71.42 | 14,23             
+ Point.ts      |     100 |       70 |     100 |     100 | 1-25              
+---------------|---------|----------|---------|---------|-------------------
