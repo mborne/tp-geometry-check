@@ -8,6 +8,10 @@
     ✔ test default constructor
     ✔ test corners
 
+  test Envelope Builder
+    ✔ test default constructor 
+    ✔ test insert
+
   test LineString
     ✔ test default constructor
     ✔ test constructor with coordinates
@@ -17,6 +21,8 @@
     ✔ test translate list
     ✔ test clone empty list 
     ✔ test clone list 
+    ✔ test envelope line empty 
+    ✔ test envelope line
 
   test Point
     ✔ test default constructor
@@ -25,15 +31,18 @@
     ✔ test translate point with coordinates
     ✔ test clone empty point 
     ✔ test clone point 
+    ✔ test envelope point empty 
+    ✔ test envelope point
 
 
-  16 passing (7ms)
+  22 passing (8ms)
 
----------------|---------|----------|---------|---------|-------------------
-File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------|---------|----------|---------|---------|-------------------
-All files      |     100 |    91.66 |     100 |     100 |                   
- Envelope.ts   |     100 |    88.88 |     100 |     100 | 1,22              
- LineString.ts |     100 |    93.33 |     100 |     100 | 1                 
- Point.ts      |     100 |    93.33 |     100 |     100 | 1                 
----------------|---------|----------|---------|---------|-------------------
+--------------------|---------|----------|---------|---------|-------------------
+File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------|---------|----------|---------|---------|-------------------
+All files           |     100 |    96.72 |     100 |     100 |                   
+ Envelope.ts        |     100 |    88.88 |     100 |     100 | 1,22              
+ EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
+ LineString.ts      |     100 |      100 |     100 |     100 |                   
+ Point.ts           |     100 |      100 |     100 |     100 |                   
+--------------------|---------|----------|---------|---------|-------------------

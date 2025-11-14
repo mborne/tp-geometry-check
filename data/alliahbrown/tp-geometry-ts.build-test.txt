@@ -4,6 +4,10 @@
 
 
 
+  test AbstractGeometry 
+    ✔ test asText Point
+    ✔ test asText LineString
+
   test Enveloppe
     ✔ test default constructor
     ✔ test constructor with coordinates
@@ -29,6 +33,12 @@
     ✔ test translate
     ✔ test enveloppe
 
+  test WktVisitor 
+    ✔ test Point Wkt
+    ✔ test LineString Wkt
+    ✔ test Linestring vide
+    ✔ test write Point
+
   test WktWriter 
     ✔ test Point vide
     ✔ test Linestring vide
@@ -36,16 +46,18 @@
     ✔ test write LineString
 
 
-  19 passing (10ms)
+  25 passing (9ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |   98.75 |    94.93 |     100 |   98.75 |                   
+All files              |   99.03 |    94.73 |     100 |   99.02 |                   
+ AbstractGeometry.ts   |     100 |      100 |     100 |     100 |                   
  Enveloppe.ts          |     100 |    95.83 |     100 |     100 | 1                 
  EnveloppeBuilder.ts   |     100 |      100 |     100 |     100 |                   
  Linestring.ts         |     100 |      100 |     100 |     100 |                   
  LogGeometryVisitor.ts |     100 |    81.81 |     100 |     100 | 1-7               
  Point.ts              |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts         |     100 |       90 |     100 |     100 | 1                 
  WktWriter.ts          |   93.33 |    92.85 |     100 |   93.33 | 25                
 -----------------------|---------|----------|---------|---------|-------------------

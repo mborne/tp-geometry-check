@@ -26,6 +26,7 @@
     ✔ point non vide
     ✔ linestring vide
     ✔ linestring non vide
+    ✔ utilise console.log par défaut
 
   test Point
     ✔ test default constructor 
@@ -37,6 +38,12 @@
     ✔ test getEnvelope on empty point
     ✔ test getEnvelope on non-empty point
 
+  test WktVisitor
+    ✔ POINT EMPTY
+    ✔ POINT(x y)
+    ✔ LINESTRING EMPTY
+    ✔ LINESTRING(x1 y1, x2 y2, ...)
+
   test WktWriter
     ✔ POINT EMPTY
     ✔ POINT(x y)
@@ -45,16 +52,17 @@
     ✔ should throw error for unsupported geometry type
 
 
-  30 passing (11ms)
+  35 passing (11ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |     100 |     97.8 |     100 |     100 |                   
+All files              |     100 |    97.05 |     100 |     100 |                   
  Envelope.ts           |     100 |    94.73 |     100 |     100 | 1                 
  EnvelopeBuilder.ts    |     100 |      100 |     100 |     100 |                   
  LineString.ts         |     100 |      100 |     100 |     100 |                   
- LogGeometryVisitor.ts |     100 |       90 |     100 |     100 | 1                 
+ LogGeometryVisitor.ts |     100 |     90.9 |     100 |     100 | 1                 
  Point.ts              |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts         |     100 |       90 |     100 |     100 | 1                 
  WktWriter.ts          |     100 |      100 |     100 |     100 |                   
 -----------------------|---------|----------|---------|---------|-------------------

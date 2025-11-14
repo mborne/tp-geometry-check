@@ -15,26 +15,32 @@
     ✔ test constructor with points
     ✔ copy empty
     ✔ copy not empty
+    ✔ envelope creation
+    ✔ wkt writer creation
 
   test Point
     ✔ test default constructor
     ✔ test constructor with coordinates
     ✔ copy empty
     ✔ copy not empty
+    ✔ envelope creation
+    ✔ empty envelope creation
+    ✔ wkt writer creation
 
   test Translate
     ✔ translate empty
     ✔ translate with value
 
 
-  14 passing (8ms)
+  19 passing (8ms)
 
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
-All files           |     100 |    94.23 |     100 |     100 |                   
+All files           |   99.01 |    96.96 |     100 |   98.95 |                   
  Envelope.ts        |     100 |    92.85 |     100 |     100 | 1                 
  EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
- LineString.ts      |     100 |    91.66 |     100 |     100 | 1                 
- Point.ts           |     100 |    92.85 |     100 |     100 | 1                 
+ LineString.ts      |     100 |      100 |     100 |     100 |                   
+ Point.ts           |     100 |      100 |     100 |     100 |                   
+ WktWriter.ts       |   96.55 |    92.85 |     100 |   96.42 | 48                
 --------------------|---------|----------|---------|---------|-------------------

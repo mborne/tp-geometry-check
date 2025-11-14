@@ -5,7 +5,7 @@ npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supporte
 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
 
-added 248 packages, and audited 249 packages in 2s
+added 248 packages, and audited 249 packages in 3s
 
 38 packages are looking for funding
   run `npm fund` for details

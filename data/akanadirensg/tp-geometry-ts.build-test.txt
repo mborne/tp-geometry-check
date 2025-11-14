@@ -23,15 +23,21 @@
     ✔ test clone point
     ✔ test getEnvelope point
 
+  test WktWriter
+    ✔ test WktWriter Point
+    ✔ test WktWriter LineString
+    ✔ test WktWriter sans geometry
 
-  13 passing (7ms)
+
+  16 passing (10ms)
 
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
-All files           |     100 |    98.59 |     100 |     100 |                   
+All files           |     100 |     98.8 |     100 |     100 |                   
  Envelope.ts        |     100 |    95.45 |     100 |     100 | 1                 
  EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
  LineString.ts      |     100 |      100 |     100 |     100 |                   
  Point.ts           |     100 |      100 |     100 |     100 |                   
+ WktWriter.ts       |     100 |      100 |     100 |     100 |                   
 --------------------|---------|----------|---------|---------|-------------------

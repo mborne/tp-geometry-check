@@ -4,6 +4,13 @@
 
 
 
+  test Enveloppe
+    ✔ test default constructor
+    ✔ test enveloppe with coordinates
+
+  test Enveloppe Builder
+    ✔ test enveloppe builder with coordinates
+
   test Linestring
     ✔ test default constructor
     ✔ test constructor with coordinates
@@ -17,12 +24,14 @@
     ✔ should clone point
 
 
-  8 passing (9ms)
+  11 passing (7ms)
 
----------------|---------|----------|---------|---------|-------------------
-File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------|---------|----------|---------|---------|-------------------
-All files      |     100 |     87.5 |     100 |     100 |                   
- LineString.ts |     100 |     87.5 |     100 |     100 | 1                 
- Point.ts      |     100 |     87.5 |     100 |     100 | 1                 
----------------|---------|----------|---------|---------|-------------------
+---------------------|---------|----------|---------|---------|-------------------
+File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+---------------------|---------|----------|---------|---------|-------------------
+All files            |     100 |    90.47 |     100 |     100 |                   
+ Enveloppe.ts        |     100 |    91.66 |     100 |     100 | 1                 
+ EnveloppeBuilder.ts |     100 |    92.85 |     100 |     100 | 9                 
+ LineString.ts       |     100 |     87.5 |     100 |     100 | 1                 
+ Point.ts            |     100 |     87.5 |     100 |     100 | 1                 
+---------------------|---------|----------|---------|---------|-------------------

@@ -21,7 +21,7 @@
     ✔ test default should copy
 
 
-  12 passing (10ms)
+  12 passing (9ms)
 
 ---------------|---------|----------|---------|---------|-------------------
 File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

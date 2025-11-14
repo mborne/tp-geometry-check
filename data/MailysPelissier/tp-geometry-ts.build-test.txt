@@ -20,15 +20,22 @@
     ✔ translate and clone point
     ✔ envelope point
 
+  test WktWriter
+    ✔ test empty point
+    ✔ test point with coordinates
+    ✔ test empty linestring
+    ✔ test linestring with coordinates
 
-  10 passing (7ms)
+
+  14 passing (7ms)
 
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
-All files           |     100 |     92.3 |     100 |     100 |                   
+All files           |   98.75 |    92.59 |     100 |   98.73 |                   
  Envelope.ts        |     100 |       70 |     100 |     100 | 1-10              
  EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
  LineString.ts      |     100 |      100 |     100 |     100 |                   
  Point.ts           |     100 |      100 |     100 |     100 |                   
+ WktWriter.ts       |   95.45 |    93.33 |     100 |   95.23 | 37                
 --------------------|---------|----------|---------|---------|-------------------

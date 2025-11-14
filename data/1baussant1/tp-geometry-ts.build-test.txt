@@ -18,6 +18,15 @@
     ✔ clone() should create a similar but independent instance
     ✔ getEnvelope() should return a valid envelope
     ✔ getEnvelope() of an empty point should return an empty envelope
+    ✔ default constructor should create empty linestring
+    ✔ constructor with points should store them correctly
+    ✔ translate() should move all points
+    ✔ translate() on empty LineString should not crash
+    ✔ clone() should produce a deep copy
+    ✔ getEnvelope should compute correct bbox
+    ✔ getEnvelope() of empty LineString should be empty
+    ✔ WKT writer should output LINESTRING EMPTY
+    ✔ WKT writer should output valid LINESTRING WKT
 
   Test Point
     ✔ test default constructor
@@ -28,14 +37,22 @@
     ✔ getEnvelope() should return a valid envelope
     ✔ getEnvelope() of an empty point should return an empty envelope
 
+  Test WktWriter
+    ✔ should write POINT EMPTY for an empty point
+    ✔ should write POINT(x y) for a non-empty point
+    ✔ should write LINESTRING EMPTY for an empty linestring
+    ✔ should write LINESTRING(x1 y1,x2 y2,...) for a non-empty linestring
 
-  18 passing (8ms)
+
+  31 passing (13ms)
 
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
-All files           |   94.11 |    92.85 |   96.29 |   97.82 |                   
+All files           |   95.65 |    93.65 |   97.77 |   97.53 |                   
  Envelope.ts        |   83.33 |    81.25 |   91.66 |   93.33 | 55                
  EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
+ LineString.ts      |     100 |      100 |     100 |     100 |                   
  Point.ts           |     100 |      100 |     100 |     100 |                   
+ WktWriter.ts       |   95.65 |    91.66 |     100 |      95 | 12                
 --------------------|---------|----------|---------|---------|-------------------
