@@ -30,7 +30,7 @@
     ✔ test linestring constructor
 
 
-  15 passing (8ms)
+  15 passing (9ms)
 
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

@@ -4,6 +4,10 @@
 
 
 
+  AbstractGeometry - Facade asText()
+    ✔ should call accept(visitor) when asText() is called
+    ✔ should create a new visitor on each call
+
   test EnvelopeBuilder
     ✔ should calculate a simple bbox
     ✔ should deal with a single point
@@ -58,17 +62,18 @@
     ✔ should write LINESTRING(x1 y1,x2 y2,...) for a non-empty linestring
 
 
-  41 passing (13ms)
+  43 passing (14ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |   96.61 |    92.77 |   98.18 |   98.11 |                   
+All files              |   96.72 |    94.25 |   98.24 |   98.16 |                   
+ AbstractGeometry.ts   |     100 |      100 |     100 |     100 |                   
  Envelope.ts           |   83.33 |    81.25 |   91.66 |   93.33 | 55                
  EnvelopeBuilder.ts    |     100 |      100 |     100 |     100 |                   
  LineString.ts         |     100 |      100 |     100 |     100 |                   
  LogGeometryVisitor.ts |     100 |       90 |     100 |     100 | 1                 
  Point.ts              |     100 |      100 |     100 |     100 |                   
  WktVisitor.ts         |     100 |       90 |     100 |     100 | 1                 
- WktWriter.ts          |   95.65 |    91.66 |     100 |      95 | 12                
+ WktWriter.ts          |   93.75 |      100 |     100 |   91.66 | 21                
 -----------------------|---------|----------|---------|---------|-------------------

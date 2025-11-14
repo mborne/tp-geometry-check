@@ -45,7 +45,7 @@ Je suis un point vide
     ✔ translate with value
 
 
-  28 passing (11ms)
+  28 passing (10ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

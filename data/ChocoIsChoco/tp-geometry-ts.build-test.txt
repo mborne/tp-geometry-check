@@ -25,15 +25,20 @@
     ✔ should clone point
     ✔ test constructor with getEnvelope for point 
 
+  test WktWriter
+    ✔ test with WktWriter for Point
+    ✔ test with WktWriter for LineString
 
-  13 passing (7ms)
+
+  15 passing (8ms)
 
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------|---------|----------|---------|---------|-------------------
-All files           |     100 |    97.56 |     100 |     100 |                   
+All files           |   98.66 |    98.03 |     100 |   98.64 |                   
  Envelope.ts        |     100 |    91.66 |     100 |     100 | 1                 
  EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
  LineString.ts      |     100 |      100 |     100 |     100 |                   
  Point.ts           |     100 |      100 |     100 |     100 |                   
+ WktWriter.ts       |   94.44 |      100 |     100 |   94.11 | 30                
 --------------------|---------|----------|---------|---------|-------------------

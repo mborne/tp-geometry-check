@@ -103,7 +103,7 @@ Je suis un point avec x=1 et y=2.
     ✔ test write linestring with points
 
 
-  77 passing (21ms)
+  77 passing (31ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

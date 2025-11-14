@@ -6,7 +6,8 @@
 
   test Envelope
     ✔ test empty envelope constructor
-    ✔ test envelope constructor with coordinates
+    ✔ test envelope constructor with a Point
+    ✔ test envelope constructor with a LineString
 
   test LineString
     ✔ test default constructor
@@ -40,17 +41,18 @@
     ✔ test WktWriter with LineString
 
 
-  23 passing (9ms)
+  24 passing (11ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |   99.11 |    93.93 |     100 |    99.1 |                   
+All files              |   99.23 |     93.5 |     100 |   99.21 |                   
+ AbstractGeometry.ts   |     100 |      100 |     100 |     100 |                   
  Envelope.ts           |     100 |       90 |     100 |     100 | 1                 
  EnvelopeBuilder.ts    |     100 |      100 |     100 |     100 |                   
  LineString.ts         |     100 |      100 |     100 |     100 |                   
  LogGeometryVisitor.ts |     100 |    81.81 |     100 |     100 | 1-9               
  Point.ts              |     100 |      100 |     100 |     100 |                   
- WktVisitor.ts         |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts         |     100 |     90.9 |     100 |     100 | 1                 
  WktWriter.ts          |   96.15 |    93.33 |     100 |      96 | 15                
 -----------------------|---------|----------|---------|---------|-------------------

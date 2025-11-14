@@ -9,19 +9,28 @@
     ✔ test constructor with coordinates
     ✔ test translate linestring
     ✔ test clone
+    ✔ test envelopeBuilder
+    ✔ test wkt empty
+    ✔ test wkt
 
   test Point
     ✔ test default constructor
     ✔ test constructor with coordinates
-    ✔ should translate point
+    ✔  test translate  point
+    ✔ test clone point
+    ✔ test wkt empty
+    ✔ test wkt
 
 
-  7 passing (6ms)
+  13 passing (9ms)
 
----------------|---------|----------|---------|---------|-------------------
-File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------|---------|----------|---------|---------|-------------------
-All files      |   80.76 |    85.71 |   94.11 |   80.76 |                   
- LineString.ts |   69.23 |     87.5 |    87.5 |   69.23 | 18-22             
- Point.ts      |    92.3 |    84.61 |     100 |    92.3 | 26                
----------------|---------|----------|---------|---------|-------------------
+--------------------|---------|----------|---------|---------|-------------------
+File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------|---------|----------|---------|---------|-------------------
+All files           |    62.5 |    89.36 |    60.6 |   62.82 |                   
+ Envelope.ts        |      20 |     62.5 |    12.5 |   22.22 | 8-31              
+ EnvelopeBuilder.ts |      25 |      100 |      25 |      25 | 5-19              
+ LineString.ts      |   55.55 |      100 |   77.77 |   55.55 | 20-32             
+ Point.ts           |   72.22 |    85.71 |      90 |   72.22 | 27,38-42          
+ WktWriter.ts       |     100 |      100 |     100 |     100 |                   
+--------------------|---------|----------|---------|---------|-------------------
