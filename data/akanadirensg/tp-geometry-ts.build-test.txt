@@ -46,7 +46,7 @@
     ✔ test WktWriter sans geometry
 
 
-  25 passing (12ms)
+  25 passing (11ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

@@ -67,7 +67,7 @@
     ✔ test write LineString
 
 
-  40 passing (13ms)
+  40 passing (15ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

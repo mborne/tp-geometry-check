@@ -45,7 +45,7 @@
     ✔ test linestring with coordinates
 
 
-  26 passing (12ms)
+  26 passing (9ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

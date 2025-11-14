@@ -38,7 +38,7 @@
     ✔ should throw error for unsupported geometry
 
 
-  25 passing (9ms)
+  25 passing (10ms)
 
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

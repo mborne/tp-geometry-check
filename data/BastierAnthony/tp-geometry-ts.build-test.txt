@@ -53,7 +53,7 @@
     ✔ test linestring wkt
 
 
-  38 passing (11ms)
+  38 passing (12ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

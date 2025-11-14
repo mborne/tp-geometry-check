@@ -40,7 +40,7 @@
     ✔ test WktWriter with LineString
 
 
-  23 passing (10ms)
+  23 passing (9ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
