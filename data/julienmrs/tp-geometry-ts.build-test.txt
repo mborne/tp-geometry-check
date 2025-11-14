@@ -23,6 +23,8 @@
     ✔ test clone list 
     ✔ test envelope line empty 
     ✔ test envelope line
+    ✔ test visitor lineString empty
+    ✔ test visitor lineString
 
   test Point
     ✔ test default constructor
@@ -33,16 +35,35 @@
     ✔ test clone point 
     ✔ test envelope point empty 
     ✔ test envelope point
+    ✔ test visitor point empty
+    ✔ test visitor point
+
+  test WktWriter
+    ✔ test default constructor
+    ✔ test construct point
+    ✔ test construct linestring
+    ✔ test WktVisitor point 
+Point { coordinate: [ 3, 4 ] }
+2
+WktVisitor { buffer: 'POINT(3 4)' }
+    ✔ test WktVisitor point 
+WktVisitor { buffer: 'LINESTRING' }
+    ✔ test WktVisitor line empty
+WktVisitor { buffer: 'LINESTRING(3 4,5 6)' }
+    ✔ test WktVisitor line 
 
 
-  22 passing (8ms)
+  33 passing (14ms)
 
---------------------|---------|----------|---------|---------|-------------------
-File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
---------------------|---------|----------|---------|---------|-------------------
-All files           |     100 |    96.72 |     100 |     100 |                   
- Envelope.ts        |     100 |    88.88 |     100 |     100 | 1,22              
- EnvelopeBuilder.ts |     100 |      100 |     100 |     100 |                   
- LineString.ts      |     100 |      100 |     100 |     100 |                   
- Point.ts           |     100 |      100 |     100 |     100 |                   
---------------------|---------|----------|---------|---------|-------------------
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |   99.21 |    94.84 |     100 |    99.1 |                   
+ Envelope.ts           |     100 |    88.88 |     100 |     100 | 1,22              
+ EnvelopeBuilder.ts    |     100 |      100 |     100 |     100 |                   
+ LineString.ts         |     100 |      100 |     100 |     100 |                   
+ LogGeometryVisitor.ts |     100 |     87.5 |     100 |     100 | 1                 
+ Point.ts              |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts         |     100 |     90.9 |     100 |     100 | 1                 
+ WktWriter.ts          |   95.23 |    92.85 |     100 |   94.11 | 29                
+-----------------------|---------|----------|---------|---------|-------------------

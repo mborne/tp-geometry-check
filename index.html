@@ -10,7 +10,7 @@
 
 <body>
     <div class="container-fluid">
-        <p>Mis à jour le 14/11 à 09h35</p>
+        <p>Mis à jour le 14/11 à 15h35</p>
         <table id="results" class="table table-striped" width="100%"></table>
     </div>
 
@@ -20,7 +20,7 @@
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
     <script type="text/javascript">
         function loadResults() {
-            $.getJSON('./results.json?_t=202511140935', function (results) {
+            $.getJSON('./results.json?_t=202511141535', function (results) {
                 let dataSet = results.map(function(result){
                     return [
                         `<a href="${result.repositoryUrl}" target="_blank">${result.username}</a>`,

@@ -12,6 +12,30 @@
     ✔ Envelope.toString() format
     ✔ EnvelopeBuilder ignore les coordonnées vides
 
+  EnvelopeBuilder as GeometryVisitor
+    ✔ visitPoint() ajoute les coordonnées
+    ✔ visitLineString() parcourt tous les points
+    ✔ getEnvelope() sur Point utilise EnvelopeBuilder + accept()
+    ✔ getEnvelope() sur LineString utilise EnvelopeBuilder + accept()
+
+  GeometryCollection
+    ✔ EMPTY collection
+    ✔ collection with geometries
+    ✔ getEnvelope() for GeometryCollection
+    ✔ clone() crée une copie profonde
+    ✔ translate() translate toutes les géométries internes
+    ✔ getGeometryN() retourne la bonne géométrie
+
+  test GeometryWithCachedEnvelope
+    ✔ met en cache le resultat de getEnveloppe()
+    ✔ invalide le cache lors de la translation
+    ✔ fonctionne aussi avec LineString
+    ✔ delegue getType() à la geometry originale
+    ✔ delegue isEmpty() à la geometry originale
+    ✔ clone() crée un nouveau decorateur avec un clone interne
+    ✔ accept(visitor) délègue à l'objet original
+    ✔ asText() délègue correctement
+
   test LineString
     ✔ test default constructor
     ✔ test constructor with points
@@ -20,6 +44,8 @@
     ✔ clone of linestring
     ✔ test getEnvelope on empty LineString
     ✔ test getEnvelope on non-empty LineString
+    ✔ test asText() on empty LineString
+    ✔ test asText() on non-empty LineString
 
   test LogGeometryVisitor
     ✔ point vide
@@ -27,6 +53,8 @@
     ✔ linestring vide
     ✔ linestring non vide
     ✔ utilise console.log par défaut
+    ✔ geometry collection vide
+    ✔ geometry collection non vide
 
   test Point
     ✔ test default constructor 
@@ -37,6 +65,8 @@
     ✔ clone of non empty point
     ✔ test getEnvelope on empty point
     ✔ test getEnvelope on non-empty point
+    ✔ test asText() on empty point
+    ✔ test asText() on non-empty point
 
   test WktVisitor
     ✔ POINT EMPTY
@@ -49,20 +79,22 @@
     ✔ POINT(x y)
     ✔ LINESTRING EMPTY
     ✔ LINESTRING(x1 y1, x2 y2, ...)
-    ✔ should throw error for unsupported geometry type
 
 
-  35 passing (11ms)
+  58 passing (17ms)
 
------------------------|---------|----------|---------|---------|-------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------|---------|----------|---------|---------|-------------------
-All files              |     100 |    97.05 |     100 |     100 |                   
- Envelope.ts           |     100 |    94.73 |     100 |     100 | 1                 
- EnvelopeBuilder.ts    |     100 |      100 |     100 |     100 |                   
- LineString.ts         |     100 |      100 |     100 |     100 |                   
- LogGeometryVisitor.ts |     100 |     90.9 |     100 |     100 | 1                 
- Point.ts              |     100 |      100 |     100 |     100 |                   
- WktVisitor.ts         |     100 |       90 |     100 |     100 | 1                 
- WktWriter.ts          |     100 |      100 |     100 |     100 |                   
------------------------|---------|----------|---------|---------|-------------------
+-------------------------------|---------|----------|---------|---------|-------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------------------|---------|----------|---------|---------|-------------------
+All files                      |   98.91 |    96.03 |   98.63 |    98.8 |                   
+ AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
+ Envelope.ts                   |     100 |    94.73 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
+ GeometryCollection.ts         |   92.85 |      100 |      90 |   91.66 | 24                
+ GeometryWithCachedEnvelope.ts |     100 |    85.71 |     100 |     100 | 1                 
+ LineString.ts                 |     100 |      100 |     100 |     100 |                   
+ LogGeometryVisitor.ts         |     100 |     92.3 |     100 |     100 | 1                 
+ Point.ts                      |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts                 |     100 |     90.9 |     100 |     100 | 1                 
+ WktWriter.ts                  |   96.15 |    92.85 |     100 |      96 | 13                
+-------------------------------|---------|----------|---------|---------|-------------------

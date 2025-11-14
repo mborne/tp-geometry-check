@@ -14,18 +14,37 @@
 
   test EnveloppeBuilder
     ✔ test with coordinates
+    ✔ visit GeometryCollection
+
+  test GeometryCollection
+    ✔ test default constructor
+    ✔ test constructor with geometries
+    ✔ test translate
+
+  test GeometryWithCachedEnvelope 
+    ✔ should work for existing methods
+    ✔ test getEnvelope() caching
+    ✔ test translate invalidates cache
+
+  test LengthVisitor 
+    ✔ test Point Lenght
+    ✔ test LineString Lenght
+    ✔ test Linestring vide
+    ✔ test GeometryCollection Lenght
 
   test Linestring
     ✔ test default constructor
     ✔ test constructor with points
     ✔ test translate
-    ✔ test enveloppe
+    ✔ test getEnvelope()
 
   test LogGeometryVisitor
     ✔ test Points
     ✔ test Linestring
-    ✔ test points vides
+    ✔ test GeometryCollection
+    ✔ test Points vides 
     ✔ test Linestring vide
+    ✔ test GeometryCollection vide
 
   test Point
     ✔ test default constructor
@@ -37,7 +56,9 @@
     ✔ test Point Wkt
     ✔ test LineString Wkt
     ✔ test Linestring vide
-    ✔ test write Point
+    ✔ test Point Vide
+    ✔ test GeometryCollection Vide
+    ✔ test GeometryCollection Wkt
 
   test WktWriter 
     ✔ test Point vide
@@ -46,18 +67,21 @@
     ✔ test write LineString
 
 
-  25 passing (9ms)
+  40 passing (12ms)
 
------------------------|---------|----------|---------|---------|-------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------|---------|----------|---------|---------|-------------------
-All files              |   99.03 |    94.73 |     100 |   99.02 |                   
- AbstractGeometry.ts   |     100 |      100 |     100 |     100 |                   
- Enveloppe.ts          |     100 |    95.83 |     100 |     100 | 1                 
- EnveloppeBuilder.ts   |     100 |      100 |     100 |     100 |                   
- Linestring.ts         |     100 |      100 |     100 |     100 |                   
- LogGeometryVisitor.ts |     100 |    81.81 |     100 |     100 | 1-7               
- Point.ts              |     100 |      100 |     100 |     100 |                   
- WktVisitor.ts         |     100 |       90 |     100 |     100 | 1                 
- WktWriter.ts          |   93.33 |    92.85 |     100 |   93.33 | 25                
------------------------|---------|----------|---------|---------|-------------------
+-------------------------------|---------|----------|---------|---------|-------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------------------|---------|----------|---------|---------|-------------------
+All files                      |   98.85 |    94.21 |    98.7 |   98.79 |                   
+ AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
+ Enveloppe.ts                  |     100 |    95.83 |     100 |     100 | 1                 
+ EnveloppeBuilder.ts           |     100 |      100 |     100 |     100 |                   
+ GeometryCollection.ts         |     100 |      100 |     100 |     100 |                   
+ GeometryWithCachedEnvelope.ts |   92.85 |    85.71 |   88.88 |   92.85 | 39                
+ LengthVisitor.ts              |     100 |    85.71 |     100 |     100 | 1                 
+ Linestring.ts                 |     100 |      100 |     100 |     100 |                   
+ LogGeometryVisitor.ts         |     100 |    84.61 |     100 |     100 | 1-8               
+ Point.ts                      |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts                 |     100 |    91.66 |     100 |     100 | 1                 
+ WktWriter.ts                  |   93.33 |    92.85 |     100 |   93.33 | 25                
+-------------------------------|---------|----------|---------|---------|-------------------

@@ -14,7 +14,7 @@
     ✔ should translate point
 
 
-  7 passing (5ms)
+  7 passing (7ms)
 
 ---------------|---------|----------|---------|---------|-------------------
 File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
