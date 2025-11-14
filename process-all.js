@@ -24,10 +24,10 @@ for (const [username, repositoryUrl] of Object.entries(repositories)) {
     /*
      * on clone au besoin le dépôt
      */
-    if ( ! fs.existsSync(repositoryDir) ){
+    if (!fs.existsSync(repositoryDir)) {
         let commandClone = `git clone ${repositoryUrl} ${repositoryDir}`;
         shell.exec(commandClone, { silent: true });
-    }else{
+    } else {
         let commandPull = `cd ${repositoryDir} && git pull`;
         shell.exec(commandPull, { silent: false });
     }
@@ -41,7 +41,7 @@ for (const [username, repositoryUrl] of Object.entries(repositories)) {
     {
         let commandBranchName = 'git symbolic-ref --short HEAD';
         result.branchName = shell.exec(commandBranchName, { silent: true }).stdout.trim();
-        console.log('BRANCH : '+result.branchName);
+        console.log('BRANCH : ' + result.branchName);
     }
 
     /*
@@ -50,7 +50,16 @@ for (const [username, repositoryUrl] of Object.entries(repositories)) {
     {
         let commandCommitId = 'git rev-parse HEAD';
         result.commitId = shell.exec(commandCommitId, { silent: true }).stdout.trim();
-        console.log('COMMIT : '+result.commitId);
+        console.log('COMMIT : ' + result.commitId);
+    }
+
+    /*
+     * result.commitDate : on récupère la date du dernier commit
+     */
+    {
+        let commandCommitDate = 'git log -1 --date=iso --format=%cd'
+        result.commitDate = shell.exec(commandCommitDate, { silent: true }).stdout.trim();
+        console.log('DATE : ' + result.commitDate);
     }
 
     /*

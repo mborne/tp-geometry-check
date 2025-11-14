@@ -26,7 +26,7 @@
     ✔ test constructor with getEnvelope for point 
 
 
-  13 passing (9ms)
+  13 passing (7ms)
 
 --------------------|---------|----------|---------|---------|-------------------
 File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

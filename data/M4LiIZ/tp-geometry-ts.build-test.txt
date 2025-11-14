@@ -30,15 +30,23 @@
     ✔ test default should copy
     ✔ test should create enveloppe of 1 point
 
+  test WktWriter
+    ✔ test point empty
+    ✔ test should write Point at wkt format
+    ✔ test linestring empty
+    ✔ test linestring empty
+    ✔ should throw error for unsupported geometry
 
-  20 passing (8ms)
+
+  25 passing (9ms)
 
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   92.18 |       96 |   96.77 |   92.18 |                   
+All files            |    93.9 |    96.77 |   96.96 |   93.82 |                   
  Enveloppe.ts        |     100 |    93.75 |     100 |     100 | 1                 
  EnveloppeBuilder.ts |     100 |      100 |     100 |     100 |                   
  LineString.ts       |   72.22 |       90 |   88.88 |   72.22 | 23-29,34          
  Point.ts            |     100 |      100 |     100 |     100 |                   
+ WktWriter.ts        |     100 |      100 |     100 |     100 |                   
 ---------------------|---------|----------|---------|---------|-------------------

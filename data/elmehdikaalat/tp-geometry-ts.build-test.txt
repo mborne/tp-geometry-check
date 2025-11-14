@@ -36,6 +36,12 @@
     ✔ accept(visitor) délègue à l'objet original
     ✔ asText() délègue correctement
 
+  LengthVisitor
+    ✔ visitPoint → 0.0
+    ✔ visitLineString → segments simples
+    ✔ visitLineString → empty line = 0
+    ✔ visitGeometryCollection → somme des longueurs
+
   test LineString
     ✔ test default constructor
     ✔ test constructor with points
@@ -81,17 +87,18 @@
     ✔ LINESTRING(x1 y1, x2 y2, ...)
 
 
-  58 passing (17ms)
+  62 passing (18ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------------|---------|----------|---------|---------|-------------------
-All files                      |   98.91 |    96.03 |   98.63 |    98.8 |                   
+All files                      |   99.02 |    95.48 |    98.7 |   98.91 |                   
  AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
  Envelope.ts                   |     100 |    94.73 |     100 |     100 | 1                 
  EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
  GeometryCollection.ts         |   92.85 |      100 |      90 |   91.66 | 24                
  GeometryWithCachedEnvelope.ts |     100 |    85.71 |     100 |     100 | 1                 
+ LengthVisitor.ts              |     100 |    85.71 |     100 |     100 | 1                 
  LineString.ts                 |     100 |      100 |     100 |     100 |                   
  LogGeometryVisitor.ts         |     100 |     92.3 |     100 |     100 | 1                 
  Point.ts                      |     100 |      100 |     100 |     100 |                   

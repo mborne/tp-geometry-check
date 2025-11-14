@@ -53,7 +53,7 @@ WktVisitor { buffer: 'LINESTRING(3 4,5 6)' }
     ✔ test WktVisitor line 
 
 
-  33 passing (14ms)
+  33 passing (11ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

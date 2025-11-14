@@ -10,7 +10,7 @@
 
 <body>
     <div class="container-fluid">
-        <p>Mis à jour le 14/11 à 15h35</p>
+        <p>Mis à jour le 14/11 à 15h47</p>
         <table id="results" class="table table-striped" width="100%"></table>
     </div>
 
@@ -20,11 +20,12 @@
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
     <script type="text/javascript">
         function loadResults() {
-            $.getJSON('./results.json?_t=202511141535', function (results) {
+            $.getJSON('./results.json?_t=202511141547', function (results) {
                 let dataSet = results.map(function(result){
                     return [
                         `<a href="${result.repositoryUrl}" target="_blank">${result.username}</a>`,
                         `<a target="_blank" href="./data/${result.username}/tp-geometry-ts.branches.txt">${result.branchName}</a>`,
+                        `${result.commitDate}`,
                         `<a class="${result.build ? "text-success" : "text-danger"}" target="_blank" href="./data/${result.username}/tp-geometry-ts.build.txt">${result.build ? "SUCCESS" : "FAILURE"}</a>`,
                         `<a class="${result.test ? "text-success" : "text-danger"}" target="_blank" href="./data/${result.username}/tp-geometry-ts.build-test.txt">${result.test ? "SUCCESS" : "FAILURE"}</a>`,
                         `${result.coverage}%`
@@ -35,6 +36,7 @@
                     columns: [
                         { title: "Username" },
                         { title: "DefaultBranch" },
+                        { title: "LastCommitPush" },
                         { title: "Build" },
                         { title: "Test" },
                         { title: "Coverage"}
