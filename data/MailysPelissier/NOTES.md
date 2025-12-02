@@ -34,6 +34,8 @@
 
 - 0.12 - exceptionnellement, il était acceptable d'avoir un null pour `cachedEnvelope` (mais ok)
 
+
+- 0.14 - type de retour `T` non déclaré sur les méthodes de `GeometryVisitor<T>`
 - 0.14 - coquille `LenghtVisitor.ts` -> `LengthVisitor.ts` + nombre de point renvoyé dans `visitLineString` (plutôt que somme des longueurs des segments) + logique compliquée dans `visitGeometryCollection`. Il était possible d'utiliser `accept` :
 
 ```ts
