@@ -4,27 +4,111 @@
 
 
 
-  ✔ test constructor with coordinates
-  ✔ test translate linestring
-  ✔ test clone
+  test Envelope
+    ✔ test Envolope constructuer
+    ✔ test getXmax
+
+  test EnvelopeBuilder
+    ✔ test EnvolopeBuilder insert() et build()
+
+  test GeometryCollection
+    ✔ test constructor and methods
+    ✔ test isEmpty with empty collection
+    ✔ test translate
+    ✔ test clone
+    ✔ test getEnvelope
+    ✔ test isEmpty with all empty geometries
+
+  test GeometryWithCachedEnvelope
+    ✔ test getEnvelope is cached
+    ✔ test translate invalidates cache
+    ✔ test getType delegation
+    ✔ test isEmpty delegation on non-empty geometry
+    ✔ test isEmpty delegation on empty geometry
+    ✔ test with LineString
+
+  test LineString
+    ✔ test default constructor
+    ✔ test constructor with coordinates
+    ✔ test translate linestring
+    ✔ test clone
+    ✔ test wkt LineString vide 
+    ✔ test wkt LineString 
+
+  test LogGeometryVisitor 
+    ✔ test la validité de la fonction accept
+    ✔ test visitPoint 
+    ✔ test visitLineString 
+Je suis une geometry collection composée de 2 géométrie(s).
+    ✔ test visitGeometryCollection 
+Je suis une geometry collection composée de 2 géométrie(s).
+    ✔ test LogGeometryVisitor accept()
+    ✔ test visitPoint avec Point vide
+    ✔ test visitLineString  vide
+Je suis une geometry collection vide.
+    ✔ test visitGeometryCollection  vide
+    ✔ test visitPoint 
+    ✔ test visitLineString 
+
   test Point
     ✔ test default constructor
     ✔ test default LineString
     ✔ test constructor with coordinates
-    ✔ should translate point
+    ✔ test translate point
+    ✔ test getEnvolope()
     ✔ test wkt empty
-    ✔ test wkt
+    ✔ test wkt point 
+    ✔ test asText 
+    ✔ GeometryWithCachedEnvelope constructeur 
+
+  test wktVisitor 
+    ✔ test le resultat de getResult
+    ✔ test visitLineString avec LineString vide
+    ✔ test visitGeometryCollection collection vide
+    1) test visitGeometryCollection autre collection
+    2) test wktVisitor 
 
 
-  9 passing (5ms)
+  43 passing (17ms)
+  2 failing
 
---------------------|---------|----------|---------|---------|-------------------
-File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
---------------------|---------|----------|---------|---------|-------------------
-All files           |   47.72 |    72.22 |   63.63 |   48.27 |                   
- Envelope.ts        |   11.76 |    31.25 |    12.5 |   11.76 | 8-49              
- EnvelopeBuilder.ts |   41.66 |      100 |      50 |   41.66 | 9-19              
- LineString.ts      |   57.89 |      100 |   77.77 |   57.89 | 36-48             
- Point.ts           |   72.22 |     92.3 |      90 |   72.22 | 23,48-52          
- WktWriter.ts       |      50 |    72.72 |     100 |   52.38 | 21-32             
---------------------|---------|----------|---------|---------|-------------------
+  1) test wktVisitor 
+       test visitGeometryCollection autre collection:
+
+      AssertionError: expected '' to equal 'GEOMETRYCOLLECTION(POINT(1 2),LINESTR…'
+      + expected - actual
+
+      +GEOMETRYCOLLECTION(POINT(1 2),LINESTRING(0 0,1 1))
+      
+      at Context.<anonymous> (test/wktVisitor.spec.ts:65:40)
+      at process.processImmediate (node:internal/timers:491:21)
+
+  2) test wktVisitor 
+       test wktVisitor :
+
+      AssertionError: expected 'Couple vide' to equal 'POINT EMPTY'
+      + expected - actual
+
+      -Couple vide
+      +POINT EMPTY
+      
+      at Context.<anonymous> (test/wktVisitor.spec.ts:71:40)
+      at process.processImmediate (node:internal/timers:491:21)
+
+
+
+-------------------------------|---------|----------|---------|---------|-------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------------------|---------|----------|---------|---------|-------------------
+All files                      |   94.25 |    94.89 |   95.52 |   94.67 |                   
+ AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
+ Envelope.ts                   |     100 |    88.88 |     100 |     100 | 1,48              
+ EnvelopeBuilder.ts            |      80 |      100 |   85.71 |   83.33 | 35-37             
+ GeometryCollection.ts         |     100 |      100 |     100 |     100 |                   
+ GeometryWithCachedEnvelope.ts |    90.9 |      100 |   85.71 |    90.9 | 32                
+ LineString.ts                 |   81.81 |      100 |      90 |   81.81 | 42-46             
+ LogGeometryVisitor.ts         |     100 |    91.66 |     100 |     100 | 1                 
+ Point.ts                      |   95.23 |     92.3 |     100 |   95.23 | 23                
+ WktWriter.ts                  |     100 |      100 |     100 |     100 |                   
+ wktVisitor.ts                 |     100 |       90 |     100 |     100 | 1                 
+-------------------------------|---------|----------|---------|---------|-------------------

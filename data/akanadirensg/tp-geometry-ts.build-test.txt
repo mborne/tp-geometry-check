@@ -12,6 +12,9 @@
     ✔ test envelope avec envelopeBuilder
     ✔ test envelope vide avec EnvelopeBuilder
     ✔ test envelope vide
+    ✔ test envelope avec Point
+    ✔ test envelope avec LineString
+    ✔ test envelope avec LineString
 
   test GeometryCollection
     ✔ test default constructor
@@ -23,6 +26,11 @@
     ✔ cache l’enveloppe d’un Point
     ✔ invalide le cache après translate()
     ✔ cache l’enveloppe d’une LineString
+
+  test LengthVisitor
+    ✔ test LengthVisitor with Point
+    ✔ test LengthVisitor with LineString
+    ✔ test LengthVisitor with GeometryCollection
 
   test LineString
     ✔ test default constructor
@@ -55,17 +63,18 @@
     ✔ test WktWriter GeometryCollection
 
 
-  32 passing (26ms)
+  38 passing (14ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------------|---------|----------|---------|---------|-------------------
-All files                      |   97.63 |    96.29 |   98.52 |   98.01 |                   
+All files                      |     100 |    95.74 |     100 |     100 |                   
  AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
  Envelope.ts                   |     100 |    95.45 |     100 |     100 | 1                 
- EnvelopeBuilder.ts            |    86.2 |      100 |   85.71 |   86.95 | 53-55             
+ EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
  GeometryCollection.ts         |     100 |      100 |     100 |     100 |                   
  GeometryWithCachedEnvelope.ts |     100 |    85.71 |     100 |     100 | 1                 
+ LengthVisitor.ts              |     100 |    83.33 |     100 |     100 | 1                 
  LineString.ts                 |     100 |      100 |     100 |     100 |                   
  LogGeometryVisitor.ts         |     100 |    84.61 |     100 |     100 | 1-8               
  Point.ts                      |     100 |      100 |     100 |     100 |                   

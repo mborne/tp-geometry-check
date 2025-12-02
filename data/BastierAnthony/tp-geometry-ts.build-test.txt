@@ -14,6 +14,20 @@
     ✔ test build with coordinates
     ✔ test build with single coordinate
 
+  test GeometryCollection
+    ✔ test default constructor
+    ✔ test constructor with geometries
+    ✔ test translation
+    ✔ test cloning construct
+    ✔ test asText with empty geometrycollection
+    ✔ test asText with non empty linestring
+    ✔ test envelope builder
+    ✔ test cached envelope
+    ✔ should return Je suis une geometry collection vide. 
+    ✔ should return Je suis un point avec x=2.0 et y=3.0.
+    ✔ test lenVisitor with empty geometrycollection
+    ✔ test lenVisitor with non empty geometrycollection
+
   test LineString
     ✔ test default constructor
     ✔ test constructor with coordinates
@@ -26,8 +40,11 @@
     ✔ test WktVisitor: should work with empty linestring 
     ✔ test WktVisitor: should work with non empty linestring 
     ✔ test asText with empty linestring
-    ✔ test asText with non empty point
-    ✔ test cached envelope
+    ✔ test asText with non empty linestring
+    ✔ test cached envelope creation
+    ✔ test cached envelope methods
+    ✔ test lenVisitor with empty linestring
+    ✔ test lenVisitor with non empty linestring
 
   test Point
     ✔ test default constructor
@@ -45,6 +62,9 @@
     ✔ test asText with empty point
     ✔ test asText with non empty point
     ✔ test cached envelope
+    ✔ test cached envelope methods
+    ✔ test lenVisitor with empty point
+    ✔ test lenVisitor with non empty point
 
   test WktWriter
     ✔ test empty point
@@ -53,19 +73,21 @@
     ✔ test linestring wkt
 
 
-  38 passing (11ms)
+  56 passing (16ms)
 
 -------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------------|---------|----------|---------|---------|-------------------
-All files                      |   95.45 |    93.25 |   89.09 |   95.36 |                   
+All files                      |   99.55 |    93.63 |     100 |   99.53 |                   
  AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
  Envelope.ts                   |     100 |       90 |     100 |     100 | 1                 
  EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
- GeometryWithCachedEnvelope.ts |      40 |     87.5 |   33.33 |      40 | 14-34             
+ GeometryCollection.ts         |     100 |      100 |     100 |     100 |                   
+ GeometryWithCachedEnvelope.ts |     100 |     87.5 |     100 |     100 | 1                 
+ LengthVisitor.ts              |     100 |     87.5 |     100 |     100 | 1                 
  LineString.ts                 |     100 |      100 |     100 |     100 |                   
- LogGeometryVisitor.ts         |     100 |    81.81 |     100 |     100 | 1-8               
+ LogGeometryVisitor.ts         |     100 |    84.61 |     100 |     100 | 1-9               
  Point.ts                      |     100 |      100 |     100 |     100 |                   
- WktVisitor.ts                 |     100 |     90.9 |     100 |     100 | 1                 
+ WktVisitor.ts                 |     100 |    92.85 |     100 |     100 | 1                 
  WktWriter.ts                  |   96.87 |    93.33 |     100 |   96.77 | 40                
 -------------------------------|---------|----------|---------|---------|-------------------

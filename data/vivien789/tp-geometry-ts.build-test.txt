@@ -17,6 +17,14 @@
     ✔ should translate point
     ✔ should clone point
     ✔ should get enveloppe
+LINESTRING(3.0 4.0, 5.0 6.0)
+    ✔ should return linestring in text wkt
+
+  test LogGeometryVisitor
+    ✔ should work with empty point
+    ✔ should work with point
+    ✔ should work with empty linestring
+    ✔ should work with linestring
 
   test Point
     ✔ test default constructor
@@ -24,21 +32,31 @@
     ✔ should translate point
     ✔ should clone point
     ✔ should get enveloppe point
+POINT(3.0 4.0)
+    ✔ should return point in text wkt
+
+  test LogGeometryVisitor
+    ✔ should work with empty point
+    ✔ should work with point
+    ✔ should work with empty linestring
+    ✔ should work with linestring
 
   test WKT
     ✔ test point constructor
     ✔ test linestring constructor
 
 
-  15 passing (9ms)
+  25 passing (10ms)
 
----------------------|---------|----------|---------|---------|-------------------
-File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------------|---------|----------|---------|---------|-------------------
-All files            |     100 |    96.22 |     100 |     100 |                   
- Enveloppe.ts        |     100 |    91.66 |     100 |     100 | 1                 
- EnveloppeBuilder.ts |     100 |    92.85 |     100 |     100 | 9                 
- LineString.ts       |     100 |      100 |     100 |     100 |                   
- Point.ts            |     100 |      100 |     100 |     100 |                   
- WktWriter.ts        |     100 |      100 |     100 |     100 |                   
----------------------|---------|----------|---------|---------|-------------------
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |     100 |     93.5 |     100 |     100 |                   
+ Enveloppe.ts          |     100 |    91.66 |     100 |     100 | 1                 
+ EnveloppeBuilder.ts   |     100 |    92.85 |     100 |     100 | 9                 
+ LineString.ts         |     100 |      100 |     100 |     100 |                   
+ LogGeometryVisitor.ts |     100 |    81.81 |     100 |     100 | 1-7               
+ Point.ts              |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts         |     100 |     92.3 |     100 |     100 | 1                 
+ WktWriter.ts          |     100 |      100 |     100 |     100 |                   
+-----------------------|---------|----------|---------|---------|-------------------

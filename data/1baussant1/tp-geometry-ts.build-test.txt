@@ -62,7 +62,7 @@
     ✔ should write LINESTRING(x1 y1,x2 y2,...) for a non-empty linestring
 
 
-  43 passing (14ms)
+  43 passing (20ms)
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 

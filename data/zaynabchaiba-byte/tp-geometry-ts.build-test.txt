@@ -4,33 +4,76 @@
 
 
 
-  test LineString
-    ✔ test default constructor
-    ✔ test constructor with coordinates
-    ✔ test translate linestring
-    ✔ test clone
-    ✔ test envelopeBuilder
-    ✔ test wkt empty
-    ✔ test wkt
-
   test Point
     ✔ test default constructor
     ✔ test constructor with coordinates
-    ✔  test translate  point
+    ✔ test translate point
     ✔ test clone point
+    ✔ test envelopeBuilder
+    ✔ test envelopeBuilder empty
+    ✔ test empty envelope class
     ✔ test wkt empty
     ✔ test wkt
+    ✔ test LogGeometryVisitor
+    ✔ test LogGeometryVisitor empty point
+    ✔ test asText
+    ✔ test GeometryWithCachedEnvelope on Point
+    ✔ test GeometryWithCachedEnvelope on empty Point
+    ✔ test GeometryWithCachedEnvelope LogGeometryVisitor
+    ✔ test GeometryCollection with multiple Points
+    ✔ test GeometryCollection translate
+    ✔ test GeometryCollection clone
+    ✔ test GeometryCollection empty
+    ✔ test LengthVisitor on LineString
+    ✔ test LengthVisitor on Point
+    ✔ test envelope toString non empty
+    ✔ test expandToInclude
+    ✔ test expandToInclude on empty envelope
+    ✔ test expandToInclude interior point
+
+  test Point
+    ✔ test default constructor
+    ✔ test constructor
+    ✔ test translate
+    ✔ test clone
+    ✔ test envelopeBuilder
+    ✔ test envelopeBuilder empty
+    ✔ test empty envelope class
+    ✔ test wkt empty
+    ✔ test wkt
+    ✔ test LogGeometryVisitor
+    ✔ test LogGeometryVisitor empty point
+    ✔ test asText
+    ✔ test GeometryWithCachedEnvelope on Point
+    ✔ test GeometryWithCachedEnvelope on empty Point
+    ✔ test GeometryWithCachedEnvelope LogGeometryVisitor
+    ✔ test GeometryCollection with multiple Points
+    ✔ test GeometryCollection translate
+    ✔ test GeometryCollection clone
+    ✔ test GeometryCollection empty
+    ✔ test LengthVisitor on LineString
+    ✔ test LengthVisitor on Point
+    ✔ test envelope toString non empty
+    ✔ test expandToInclude
+    ✔ test expandToInclude on empty envelope
+    ✔ test expandToInclude interior point
 
 
-  13 passing (9ms)
+  50 passing (14ms)
 
---------------------|---------|----------|---------|---------|-------------------
-File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
---------------------|---------|----------|---------|---------|-------------------
-All files           |    62.5 |    89.36 |    60.6 |   62.82 |                   
- Envelope.ts        |      20 |     62.5 |    12.5 |   22.22 | 8-31              
- EnvelopeBuilder.ts |      25 |      100 |      25 |      25 | 5-19              
- LineString.ts      |   55.55 |      100 |   77.77 |   55.55 | 20-32             
- Point.ts           |   72.22 |    85.71 |      90 |   72.22 | 27,38-42          
- WktWriter.ts       |     100 |      100 |     100 |     100 |                   
---------------------|---------|----------|---------|---------|-------------------
+-------------------------------|---------|----------|---------|---------|-------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------------------|---------|----------|---------|---------|-------------------
+All files                      |   73.18 |    84.46 |   79.72 |      75 |                   
+ AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
+ Envelope.ts                   |     100 |       90 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts            |   76.19 |      100 |      80 |      80 | 20-23             
+ GeometryCollection.ts         |   72.41 |    83.33 |   71.42 |      76 | 16,49-57          
+ GeometryWithCachedEnvelope.ts |   84.61 |    85.71 |   77.77 |   84.61 | 19,28             
+ LengthVisitor.ts              |     100 |    83.33 |     100 |     100 | 1                 
+ LineString.ts                 |   47.36 |     87.5 |   45.45 |   47.05 | 17-30,38-42       
+ LogGeometryVisitor.ts         |    62.5 |       70 |   66.66 |    62.5 | 15-18             
+ Point.ts                      |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts                 |      40 |       60 |      80 |   42.85 | 14,21-29          
+ WktWriter.ts                  |      50 |    72.72 |     100 |   52.38 | 19-30             
+-------------------------------|---------|----------|---------|---------|-------------------

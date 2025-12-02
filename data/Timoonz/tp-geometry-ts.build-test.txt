@@ -9,17 +9,36 @@
     ✔ test envelope constructor with a Point
     ✔ test envelope constructor with a LineString
 
+  test GeometryCollection
+    ✔ test default constructor
+    ✔ test constructor with Geometries
+    ✔ test copy and translate geometry collection
+
+  test GeometryWitCachedEnvelope
+    ✔ test empty geometry, should return an empty cached envelope
+    ✔ test single point with GeometryCachedEnvelope
+    ✔ test LineString with GeometryCachedEnvelope
+    ✔ test clone GeometryWithCachedEnvelope
+    ✔ test accept GeometryWithCachedEnvelope (with LogGeometryVisitor)
+
+  test LengthVisitor
+    ✔ test LenghtVisitor with Point
+    ✔ test LenghtVisitor with LineString
+    ✔ test LenghtVisitor with GeometryCollection
+
   test LineString
     ✔ test default constructor
-    ✔ test constructor with points
+    ✔ test constructor with Points
     ✔ test translate LineString
     ✔ test copy LineString
 
   test LogGeometryVisitor
-    ✔ test GeometryVisitor empty Point
-    ✔ test GeometryVisitor Point with coordinates
-    ✔ test GeometryVisitor empty LineString
-    ✔ test GeometryVisitor LineString with Points
+    ✔ test GeometryVisitor with empty Point
+    ✔ test GeometryVisitor with Point with coordinates
+    ✔ test GeometryVisitor with empty Linestring
+    ✔ test GeometryVisitor with non empty Linestring
+    ✔ test GeometryVisitor with empty GeometryCollection
+    ✔ test GeometryVisitor with non empty GeometryCollection
 
   test Point
     ✔ test default constructor
@@ -41,18 +60,21 @@
     ✔ test WktWriter with LineString
 
 
-  24 passing (11ms)
+  37 passing (15ms)
 
------------------------|---------|----------|---------|---------|-------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------|---------|----------|---------|---------|-------------------
-All files              |   99.23 |     93.5 |     100 |   99.21 |                   
- AbstractGeometry.ts   |     100 |      100 |     100 |     100 |                   
- Envelope.ts           |     100 |       90 |     100 |     100 | 1                 
- EnvelopeBuilder.ts    |     100 |      100 |     100 |     100 |                   
- LineString.ts         |     100 |      100 |     100 |     100 |                   
- LogGeometryVisitor.ts |     100 |    81.81 |     100 |     100 | 1-9               
- Point.ts              |     100 |      100 |     100 |     100 |                   
- WktVisitor.ts         |     100 |     90.9 |     100 |     100 | 1                 
- WktWriter.ts          |   96.15 |    93.33 |     100 |      96 | 15                
------------------------|---------|----------|---------|---------|-------------------
+-------------------------------|---------|----------|---------|---------|-------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------------------|---------|----------|---------|---------|-------------------
+All files                      |   99.49 |    95.23 |     100 |   99.47 |                   
+ AbstractGeometry.ts           |     100 |      100 |     100 |     100 |                   
+ Envelope.ts                   |     100 |       90 |     100 |     100 | 1                 
+ EnvelopeBuilder.ts            |     100 |      100 |     100 |     100 |                   
+ GeometryCollection.ts         |     100 |      100 |     100 |     100 |                   
+ GeometryWithCachedEnvelope.ts |     100 |      100 |     100 |     100 |                   
+ LenghtVisitor.ts              |     100 |      100 |     100 |     100 |                   
+ LineString.ts                 |     100 |      100 |     100 |     100 |                   
+ LogGeometryVisitor.ts         |     100 |    84.61 |     100 |     100 | 1-10              
+ Point.ts                      |     100 |      100 |     100 |     100 |                   
+ WktVisitor.ts                 |     100 |    92.85 |     100 |     100 | 1                 
+ WktWriter.ts                  |   96.15 |    93.33 |     100 |      96 | 15                
+-------------------------------|---------|----------|---------|---------|-------------------
