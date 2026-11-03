@@ -6,18 +6,18 @@
 [1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/home/MBorne/workspaces/workspace_mborne/tp-geometry-check/data/achrafsk9/tp-geometry-ts[39m
       [2mCoverage enabled with [22m[33mv8[39m
 
- [32m✓[39m test/Point.spec.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 6[2mms[22m[39m
- [32m✓[39m test/EnvelopeBuilder.spec.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32m✓[39m test/EnvelopeBuilder.spec.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 7[2mms[22m[39m
+ [32m✓[39m test/GeometryClone.spec.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32m✓[39m test/GeometryTranslate.spec.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 8[2mms[22m[39m
  [32m✓[39m test/GeometryEmpty.spec.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 7[2mms[22m[39m
- [32m✓[39m test/GeometryEnvelope.spec.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 11[2mms[22m[39m
- [32m✓[39m test/GeometryTranslate.spec.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 11[2mms[22m[39m
- [32m✓[39m test/GeometryClone.spec.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 14[2mms[22m[39m
+ [32m✓[39m test/Point.spec.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m test/GeometryEnvelope.spec.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 7[2mms[22m[39m
  [32m✓[39m test/Geometry.spec.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 9[2mms[22m[39m
 
 [2m Test Files [22m [1m[32m7 passed[39m[22m[90m (7)[39m
 [2m      Tests [22m [1m[32m37 passed[39m[22m[90m (37)[39m
-[2m   Start at [22m 15:41:14
-[2m   Duration [22m 355ms[2m (transform 40%, worker 26%, import 24%, tests 11%)[22m
+[2m   Start at [22m 15:57:17
+[2m   Duration [22m 320ms[2m (worker 39%, import 33%, transform 14%, tests 14%)[22m
 
 [34m % [39m[2mCoverage report from [22m[33mv8[39m
 -------------------|---------|----------|---------|---------|-------------------

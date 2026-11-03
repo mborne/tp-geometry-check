@@ -6,13 +6,13 @@
 [1m[30m[46m RUN [49m[39m[22m [36mv5.1.0 [39m[90m/home/MBorne/workspaces/workspace_mborne/tp-geometry-check/data/Yopi-em/tp-geometry-ts[39m
       [2mCoverage enabled with [22m[33mv8[39m
 
- [32m✓[39m test/Point.spec.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 8[2mms[22m[39m
  [32m✓[39m test/LineString.spec.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32m✓[39m test/Point.spec.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 7[2mms[22m[39m
 
 [2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
 [2m      Tests [22m [1m[32m6 passed[39m[22m[90m (6)[39m
-[2m   Start at [22m 15:41:44
-[2m   Duration [22m 284ms[2m (transform 50%, worker 23%, import 19%, tests 8%)[22m
+[2m   Start at [22m 15:57:34
+[2m   Duration [22m 259ms[2m (worker 38%, import 30%, transform 20%, tests 11%)[22m
 
 [34m % [39m[2mCoverage report from [22m[33mv8[39m
 ---------------|---------|----------|---------|---------|-------------------
