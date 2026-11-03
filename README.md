@@ -4,7 +4,7 @@ Correction du TP-PATTERN-GEOMETRY et retours sur les problèmes récurrents.
 
 ## Généralités
 
-Classique de la précédente session.
+Classique de la précédente session de 2025.
 
 ### G.1 - La convention de nommage doit être respectée
 

@@ -1,0 +1,30 @@
+
+> tp-geometry-ts@0.1.0 coverage
+> vitest run --coverage
+
+
+ RUN  v2.1.9 /home/MBorne/workspaces/workspace_mborne/tp-geometry-check/data/gamartouille/tp-geometry-ts
+      Coverage enabled with v8
+
+ ✓ test/Point.spec.ts (8 tests) 7ms
+ ✓ test/WktWriter.spec.ts (4 tests) 5ms
+
+ Test Files  2 passed (2)
+      Tests  12 passed (12)
+   Start at  15:42:32
+   Duration  626ms (transform 95ms, setup 0ms, collect 125ms, tests 12ms, environment 1ms, prepare 209ms)
+
+ % Coverage report from v8
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |   85.54 |    84.61 |    82.5 |   85.54 |                   
+ Coordinate.ts     |       0 |        0 |       0 |       0 |                   
+ Enveloppe.ts      |    92.3 |    58.33 |    87.5 |    92.3 | 33-34             
+ ...oppeBuilder.ts |     100 |      100 |     100 |     100 |                   
+ Geometry.ts       |       0 |        0 |       0 |       0 |                   
+ ...etryVisitor.ts |       0 |        0 |       0 |       0 |                   
+ LineString.ts     |   77.35 |       90 |      70 |   77.35 | 15-16,23-29,32-34 
+ Point.ts          |   80.48 |    92.85 |   72.72 |   80.48 | 15-16,23-26,29-30 
+ WktWriter.ts      |   94.11 |       90 |     100 |   94.11 | 36-37             
+-------------------|---------|----------|---------|---------|-------------------
